@@ -1,0 +1,118 @@
+/* =========================================================================
+   Habtamu Asefa — shared theme tokens
+   Developer-terminal / IDE aesthetic. Deep slate, orange accent.
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Accent (chosen: orange) — used sparingly for emphasis */
+  --accent:        #ea580c;
+  --accent-bright: #fb923c;
+  --accent-deep:   #c2410c;
+  --accent-tint:   rgba(234, 88, 12, 0.12);
+
+  /* Restrained "syntax" palette — used as quiet code-color motifs */
+  --syn-green:  #5fb98b;
+  --syn-blue:   #6ca8e6;
+  --syn-purple: #b08ce0;
+  --syn-yellow: #d6a44a;
+
+  /* Type */
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+
+  /* Type scale */
+  --t-xs:   12px;
+  --t-sm:   13px;
+  --t-base: 15px;
+  --t-md:   17px;
+  --t-lg:   20px;
+  --t-xl:   26px;
+  --t-2xl:  34px;
+  --t-3xl:  46px;
+  --t-4xl:  62px;
+  --t-5xl:  84px;
+
+  /* Spacing — 4px base */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px; --s-5: 20px;
+  --s-6: 24px; --s-8: 32px; --s-10: 40px; --s-12: 48px; --s-16: 64px;
+  --s-20: 80px; --s-24: 96px; --s-32: 128px;
+
+  --radius: 8px;
+  --radius-sm: 5px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 240ms;
+
+  --maxw: 1080px;
+}
+
+/* ---- Dark (default) ---------------------------------------------------- */
+:root,
+[data-theme="dark"] {
+  --bg-0: #0a0c11;   /* deepest — page */
+  --bg-1: #0f131a;   /* panel */
+  --bg-2: #151b24;   /* raised surface */
+  --bg-3: #1b2430;   /* hover */
+  --border:      #232c39;
+  --border-soft: #19212c;
+  --border-glow: rgba(234, 88, 12, 0.35);
+
+  --fg-0: #eaeef4;   /* primary */
+  --fg-1: #c3ccd9;   /* body */
+  --fg-2: #8893a3;   /* secondary / meta */
+  --fg-3: #5b6573;   /* faint / comments */
+
+  --shadow-pop: 0 2px 4px rgba(0,0,0,0.4), 0 18px 50px -18px rgba(0,0,0,0.7);
+  --shadow-card: 0 1px 0 var(--border-soft), 0 12px 30px -20px rgba(0,0,0,0.8);
+  --scrim: rgba(5,7,10,0.7);
+  --grid-line: rgba(255,255,255,0.022);
+}
+
+/* ---- Light (print-friendly / toggle) ---------------------------------- */
+[data-theme="light"] {
+  --bg-0: #f7f6f2;
+  --bg-1: #ffffff;
+  --bg-2: #f1efe9;
+  --bg-3: #e8e5dd;
+  --border:      #ddd8cd;
+  --border-soft: #e8e4da;
+  --border-glow: rgba(234, 88, 12, 0.3);
+
+  --fg-0: #171513;
+  --fg-1: #34302a;
+  --fg-2: #6b6459;
+  --fg-3: #948b7c;
+
+  --syn-green:  #2f7d57;
+  --syn-blue:   #2f6bb0;
+  --syn-purple: #7a51b8;
+  --syn-yellow: #9a6f12;
+
+  --shadow-pop: 0 2px 4px rgba(40,30,15,0.06), 0 18px 44px -22px rgba(40,30,15,0.2);
+  --shadow-card: 0 1px 2px rgba(40,30,15,0.05), 0 10px 26px -20px rgba(40,30,15,0.25);
+  --scrim: rgba(30,24,15,0.4);
+  --grid-line: rgba(0,0,0,0.025);
+}
+
+* { box-sizing: border-box; }
+
+::selection { background: var(--accent-tint); color: var(--fg-0); }
+
+/* Shared terminal window chrome dots */
+.term-dots { display: inline-flex; gap: 7px; align-items: center; }
+.term-dots i {
+  width: 11px; height: 11px; border-radius: 50%;
+  display: block; background: var(--border);
+}
+.term-dots i.r { background: #e0533f; }
+.term-dots i.y { background: #e0a23f; }
+.term-dots i.g { background: #4fb06a; }
+
+/* Prompt glyph */
+.prompt { color: var(--accent); font-weight: 700; }
+.flat   { color: var(--syn-green); }
+.dim    { color: var(--fg-3); }

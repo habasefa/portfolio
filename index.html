@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Habtamu Asefa — Full-Stack AI Engineer</title>
+<meta name="description" content="Habtamu Asefa — Full-Stack AI Engineer shipping AI-native products end-to-end: RAG, agents, retrieval, mobile, and backend. Founder of PrepX and Temaribet; author of react-native-ajora." />
+<meta property="og:title" content="Habtamu Asefa — Full-Stack AI Engineer" />
+<meta property="og:description" content="Ships AI-native products end-to-end — RAG, agents, retrieval, mobile, backend, and cloud." />
+<meta property="og:image" content="avatar.jpg" />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="stylesheet" href="theme.css" />
+<link rel="stylesheet" href="site.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ====================== NAV ====================== -->
+  <nav class="nav">
+    <div class="nav-in">
+      <a class="brand" href="#top"><span class="sq"></span> habtamu.asefa <span class="path">~/</span></a>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Menu">≡</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about"><span class="h">#</span> about</a>
+        <a href="#skills"><span class="h">#</span> skills</a>
+        <a href="#experience"><span class="h">#</span> experience</a>
+        <a href="#projects"><span class="h">#</span> projects</a>
+        <a href="#contact"><span class="h">#</span> contact</a>
+        <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+        <a class="btn-resume" href="Resume.html">⤓ Résumé</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="top">
+
+    <!-- ====================== HERO ====================== -->
+    <header class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow"><span class="prompt">❯</span> <span id="eyebrowText">cat introduction.txt</span></div>
+          <h1>Habtamu<br />Asefa<span class="u">_</span></h1>
+          <p class="tagline">Full-Stack AI Engineer<span class="sep">/</span>AI Product Engineer<span class="sep">/</span>ships end-to-end</p>
+          <p class="lede">I ship <b>AI-native products end-to-end</b> — from RAG, agents, and retrieval through mobile UX, backend, and cloud infra. Founder of <b>PrepX</b> (1,000+ users, 250 MAU) and <b>Temaribet</b> (4,000+ tutors). Author of <b>react-native-ajora</b> (6,100+ npm downloads).</p>
+          <div class="hero-cta">
+            <a class="cta cta-primary" href="#projects">View work →</a>
+            <a class="cta cta-ghost" href="Resume.html">⤓ Download résumé</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="term" id="term">
+            <div class="term-bar">
+              <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+              <span class="title"><b>habtamu</b>@portfolio: ~</span>
+            </div>
+            <div class="term-body" id="termBody"></div>
+            <div class="term-input-row" id="termInputRow" style="display:none;">
+              <span class="prompt">❯</span>
+              <input class="term-input" id="termInput" autocomplete="off" spellcheck="false" placeholder="type a command…" />
+            </div>
+          </div>
+          <div class="hint">interactive — try <code>help</code>, <code>skills</code>, <code>contact</code>, <code>clear</code></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================== ABOUT ====================== -->
+    <section class="block reveal" id="about">
+      <div class="sec-label"><span class="h">#</span> about <span class="rule"></span></div>
+      <h2 class="sec-title">Building with LLMs, shipping to real users</h2>
+      <div class="about-grid">
+        <div class="prose-card">
+          <p>I'm a <b>Full-Stack AI Engineer</b> based in Addis Ababa, building AI-native products end-to-end — from RAG, agents, and retrieval through mobile UX, backend, and the cloud infrastructure that keeps them running.</p>
+          <p>I founded two education startups. <span class="accent">PrepX</span> is an AI tutoring app (1,000+ installs, 250 MAU, 5★) with textbook-grounded retrieval over ~229K curriculum questions, kept model-agnostic via OpenRouter. <span class="accent">Temaribet</span> is a tutoring marketplace I started as a freshman and scaled to <b>4,000+ tutors and 500+ families</b> — selected into Reach for Change and Orbit Innovation Hub.</p>
+          <p>Alongside founding, I ship production software for <b>US and EU startups</b> (React Native, NestJS / FastAPI, vector + full-text search, AWS + Nginx) and maintain <span class="accent">react-native-ajora</span>, an open-source agent-UI library with 6,100+ npm downloads.</p>
+        </div>
+        <div class="stat-col">
+          <figure class="avatar">
+            <img src="avatar.jpg" alt="Habtamu Asefa" width="720" height="720" loading="lazy" />
+            <figcaption><span class="on"></span> <b>habtamu.jpg</b> — Addis Ababa, Ethiopia</figcaption>
+          </figure>
+          <div class="stat"><div class="num">4,000+</div><div class="lbl">tutors on Temaribet (+ 500 families)</div></div>
+          <div class="stat"><div class="num">1,000+</div><div class="lbl">PrepX installs · 250 MAU · 5★</div></div>
+          <div class="stat"><div class="num">6,100+</div><div class="lbl">npm downloads · react-native-ajora</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SKILLS ====================== -->
+    <section class="block reveal" id="skills">
+      <div class="sec-label"><span class="h">#</span> skills <span class="rule"></span></div>
+      <h2 class="sec-title">stack.json</h2>
+      <p class="sec-intro">The tools I reach for, grouped by what they do. AI engineering sits at the center of everything.</p>
+      <div class="code-window">
+        <div class="code-head">
+          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+          <span>stack.json</span>
+        </div>
+        <div class="code-body">
+          <div class="gutter" id="skillGutter"></div>
+          <div class="code" id="skillCode">
+<div class="ln"><span class="pun">{</span></div>
+<div class="ln">  <span class="key">"ai_engineering"</span><span class="pun">:</span> <span class="pun">[</span><span class="acc">"LLM agents"</span><span class="pun">,</span> <span class="acc">"RAG"</span><span class="pun">,</span> <span class="str">"tool calling"</span><span class="pun">,</span> <span class="str">"prompt engineering"</span><span class="pun">,</span> <span class="str">"evals"</span><span class="pun">,</span> <span class="str">"streaming AI UX"</span><span class="pun">,</span> <span class="acc">"model routing (OpenRouter)"</span><span class="pun">],</span></div>
+<div class="ln">  <span class="key">"search_retrieval"</span><span class="pun">:</span> <span class="pun">[</span><span class="acc">"Qdrant (vector)"</span><span class="pun">,</span> <span class="acc">"Typesense (full-text)"</span><span class="pun">,</span> <span class="str">"hybrid search"</span><span class="pun">,</span> <span class="str">"curriculum indexing"</span><span class="pun">],</span></div>
+<div class="ln">  <span class="key">"backend"</span><span class="pun">:</span> <span class="pun">[</span><span class="str">"NestJS"</span><span class="pun">,</span> <span class="str">"FastAPI"</span><span class="pun">,</span> <span class="str">"Node.js"</span><span class="pun">,</span> <span class="str">"Express"</span><span class="pun">,</span> <span class="str">"REST"</span><span class="pun">,</span> <span class="str">"auth"</span><span class="pun">],</span></div>
+<div class="ln">  <span class="key">"mobile"</span><span class="pun">:</span> <span class="pun">[</span><span class="str">"React Native"</span><span class="pun">,</span> <span class="str">"Expo"</span><span class="pun">,</span> <span class="str">"EAS Build"</span><span class="pun">,</span> <span class="str">"offline-first"</span><span class="pun">,</span> <span class="str">"SSE streaming UIs"</span><span class="pun">],</span></div>
+<div class="ln">  <span class="key">"agent_tooling"</span><span class="pun">:</span> <span class="pun">[</span><span class="str">"Agno"</span><span class="pun">,</span> <span class="str">"Mastra"</span><span class="pun">,</span> <span class="str">"AG-UI"</span><span class="pun">,</span> <span class="str">"CopilotKit patterns"</span><span class="pun">,</span> <span class="str">"server-side tools"</span><span class="pun">],</span></div>
+<div class="ln">  <span class="key">"databases"</span><span class="pun">:</span> <span class="pun">[</span><span class="str">"PostgreSQL"</span><span class="pun">,</span> <span class="str">"MongoDB"</span><span class="pun">,</span> <span class="str">"SQLite"</span><span class="pun">],</span></div>
+<div class="ln">  <span class="key">"devops"</span><span class="pun">:</span> <span class="pun">[</span><span class="str">"AWS EC2"</span><span class="pun">,</span> <span class="str">"Debian"</span><span class="pun">,</span> <span class="str">"Nginx"</span><span class="pun">,</span> <span class="str">"PM2"</span><span class="pun">,</span> <span class="str">"Certbot"</span><span class="pun">,</span> <span class="str">"SSL/DNS"</span><span class="pun">],</span></div>
+<div class="ln">  <span class="key">"languages"</span><span class="pun">:</span> <span class="pun">[</span><span class="acc">"TypeScript"</span><span class="pun">,</span> <span class="acc">"JavaScript"</span><span class="pun">,</span> <span class="acc">"Python"</span><span class="pun">,</span> <span class="str">"SQL"</span><span class="pun">]</span></div>
+<div class="ln"><span class="pun">}</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== EXPERIENCE ====================== -->
+    <section class="block reveal" id="experience">
+      <div class="sec-label"><span class="h">#</span> experience <span class="rule"></span></div>
+      <h2 class="sec-title">git log --author=habtamu</h2>
+      <div class="timeline">
+
+        <article class="job">
+          <div class="meta">
+            <div class="when">2024 — Present</div>
+            <div class="place">Founder &amp; Lead Engineer</div>
+            <div class="stk"><span class="chip">React Native</span><span class="chip">NestJS</span><span class="chip">FastAPI</span><span class="chip">Qdrant</span><span class="chip">Typesense</span><span class="chip">RAG</span><span class="chip">OpenRouter</span></div>
+          </div>
+          <div>
+            <h3>PrepX</h3>
+            <div class="org">AI-native learning platform · Addis Ababa</div>
+            <p class="desc">Textbook-grounded AI tutoring with offline-first mobile UX for Ethiopian high-school students.</p>
+            <ul>
+              <li>Built and shipped the full <b>React Native (Expo)</b> app and AI tutoring pipeline; grew to <b>1,000+ installs, 250 MAU, 5★</b>, and launched subscription monetization with a 3-person team.</li>
+              <li>Designed a <b>hybrid RAG</b> system (<code>Qdrant</code> vector + <code>Typesense</code> full-text) for textbook-grounded answers, kept <b>model-agnostic</b> across Gemini, GPT, Claude, and open models via OpenRouter.</li>
+              <li>Modeled a <b>self-referential curriculum graph</b> across 4 grades, 6 subjects, and 12 years of national exams — <b>~229K questions, 13.5K quizzes, 5.75K worksheets, 1.86K flashcard sets</b>.</li>
+              <li>Built backend services with NestJS, FastAPI, and PostgreSQL powering chat, retrieval, content workflows, notifications, and live competitions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="meta">
+            <div class="when">2023 — Present</div>
+            <div class="place">Full-Stack / Mobile Engineer</div>
+            <div class="stk"><span class="chip">React Native</span><span class="chip">Node.js</span><span class="chip">MongoDB</span><span class="chip">AWS EC2</span><span class="chip">Nginx</span></div>
+          </div>
+          <div>
+            <h3>Freelance &amp; Agency</h3>
+            <div class="org">US / EU clients · Remote</div>
+            <p class="desc">Production mobile and web applications for international startups and agency teams.</p>
+            <ul>
+              <li><b>Dymnd (Chicago startup):</b> shipped production React Native features used by <b>100+ users</b> over a multi-month paid engagement — rebuilt timezone-sensitive habit logic and fixed OTP, consent, keyboard, and navigation defects.</li>
+              <li>Maintained and upgraded a <b>US bar-exam prep platform</b> — backend/infra work (Node.js, AWS EC2, Nginx, Certbot) plus production bug fixes and stability improvements.</li>
+              <li>Owned end-to-end delivery: <code>EAS</code> builds, app-store releases, server deployment, and live production debugging.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="meta">
+            <div class="when">2019 — 2025</div>
+            <div class="place">Founder</div>
+            <div class="stk"><span class="chip">Marketplace</span><span class="chip">Operations</span><span class="chip">EdTech</span></div>
+          </div>
+          <div>
+            <h3>Temaribet</h3>
+            <div class="org">Tutoring marketplace · Addis Ababa</div>
+            <p class="desc">In-home tutoring marketplace connecting families with vetted college-student tutors.</p>
+            <ul>
+              <li>Built and operated a two-sided marketplace to <b>4,000+ tutors and 500+ families</b>, owning onboarding, matching, operations, and product strategy.</li>
+              <li>Founded as a freshman to solve access and trust problems in private tutoring for Ethiopian families.</li>
+              <li>Selected into <b>Reach for Change</b> and <b>Orbit Innovation Hub</b> accelerators (backed by the IKEA &amp; Mastercard Foundations); awarded grant funding and won a startup pitch competition.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================== PROJECTS ====================== -->
+    <section class="block reveal" id="projects">
+      <div class="sec-label"><span class="h">#</span> projects <span class="rule"></span></div>
+      <h2 class="sec-title">ls ./selected-work</h2>
+      <p class="sec-intro">A few things I've built — an AI-native learning platform shipped to real students, an open-source agent-UI library for mobile, open-source contributions, and a biomedical hardware thesis. <a class="intro-link" href="projects.html">Read the full case studies →</a></p>
+      <div class="proj-grid">
+
+        <a class="card wide card-link" href="projects.html#prepx">
+          <div class="top"><span class="ico">◆</span><span class="badge">Shipped · 1,000+ users · 250 MAU</span><span class="fname">prepx/</span></div>
+          <h3>PrepX — AI-native learning platform</h3>
+          <div class="yr">2024 — Present · Founder &amp; Lead Engineer</div>
+          <p>An AI study app for Ethiopian high-school students: textbook-grounded AI tutoring over a ~229K-question curriculum graph, hybrid RAG, offline-first mobile UX, and live learning — model-agnostic via OpenRouter, built and shipped with a 3-person team.</p>
+          <div class="stk"><span class="chip">React Native</span><span class="chip">NestJS</span><span class="chip">FastAPI</span><span class="chip">Qdrant</span><span class="chip">Typesense</span><span class="chip">RAG</span></div>
+          <span class="card-more">open case study →</span>
+        </a>
+
+        <a class="card card-link" href="projects.html#ajora">
+          <div class="top"><span class="ico">↯</span><span class="badge">Open source · 19★</span><span class="fname">react-native-ajora/</span></div>
+          <h3>react-native-ajora — agent UI for RN</h3>
+          <div class="yr">2024 — Present · Author</div>
+          <p>"The most complete AI agent UI for React Native" — 6,100+ npm downloads. Ports AG-UI / CopilotKit agentic patterns to mobile: SSE streaming, tool calls, sources, and server-side tool execution with Gemini.</p>
+          <div class="stk"><span class="chip">React Native</span><span class="chip">SSE</span><span class="chip">Agents</span><span class="chip">Gemini</span></div>
+          <span class="card-more">open case study →</span>
+        </a>
+
+        <a class="card card-link" href="https://github.com/habasefa" target="_blank" rel="noopener">
+          <div class="top"><span class="ico">⎇</span><span class="fname">open-source/</span></div>
+          <h3>Open-source &amp; contributions</h3>
+          <div class="yr">49 public repos</div>
+          <p>Contributor to <b>Expensify's</b> production React Native app, plus 49 public repos spanning AI, mobile, and backend experiments.</p>
+          <div class="stk"><span class="chip">TypeScript</span><span class="chip">React Native</span><span class="chip">Python</span></div>
+          <span class="card-more">view github →</span>
+        </a>
+
+        <a class="card wide card-link" href="projects.html#ulcerguard">
+          <div class="top"><span class="ico">⊹</span><span class="fname">ulcerguard/</span></div>
+          <h3>UlcerGuard — diabetic foot-ulcer prevention footwear</h3>
+          <div class="yr">2024 · AAU thesis</div>
+          <p>A pressure-sensing footwear prototype that detects high-pressure regions in diabetic patients' feet to help prevent ulcers — combining biomedical problem analysis, embedded pressure sensors, hardware prototyping, and preventative health monitoring.</p>
+          <div class="stk"><span class="chip">Embedded</span><span class="chip">Pressure sensors</span><span class="chip">Hardware</span><span class="chip">Biomedical</span></div>
+          <span class="card-more">open case study →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ====================== EDUCATION + ACHIEVEMENTS ====================== -->
+    <section class="block reveal" id="education">
+      <div class="sec-label"><span class="h">#</span> credentials <span class="rule"></span></div>
+      <div class="split">
+        <div class="panel">
+          <h3><span class="h">#</span> education</h3>
+          <div class="edu-deg">BSc, Biomedical Engineering</div>
+          <div class="edu-school">Addis Ababa University / AAiT · 2024</div>
+          <div class="edu-det">Thesis: <b>UlcerGuard</b> — pressure-sensing footwear for diabetic foot-ulcer prevention.</div>
+        </div>
+        <div class="panel">
+          <h3><span class="h">#</span> achievements</h3>
+          <ul class="ach-list">
+            <li>Scaled <b>Temaribet</b> to 4,000+ tutors &amp; 500+ families; selected into <b>Reach for Change</b> &amp; <b>Orbit Innovation Hub</b>.</li>
+            <li>Shipped <b>PrepX</b> to 1,000+ installs, 250 MAU, 5★ with a 3-person team.</li>
+            <li>Authored <b>react-native-ajora</b> — 6,100+ npm downloads, 19★ open-source library.</li>
+            <li>Delivered production software for US/EU startups across mobile, backend &amp; infra.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CONTACT ====================== -->
+    <section class="block contact-block reveal" id="contact">
+      <div class="contact-card">
+        <div class="prompt-line"><span class="prompt">❯</span> ./say-hello.sh</div>
+        <h2>Let's build something<span class="u">.</span></h2>
+        <p>Open to Full-Stack AI, AI Engineer, and AI Product roles at AI-native startups — remote or relocation.</p>
+        <div class="links-row">
+          <a class="link-btn" href="mailto:nazrihabtish@gmail.com"><span class="g">@</span> nazrihabtish@gmail.com</a>
+          <a class="link-btn" href="https://github.com/habasefa"><span class="g">⎇</span> github.com/habasefa</a>
+          <a class="link-btn" href="https://www.linkedin.com/in/habtamu-asefa-4b5459195/"><span class="g">in</span> LinkedIn</a>
+          <a class="link-btn" href="https://www.npmjs.com/package/react-native-ajora"><span class="g">↯</span> npm</a>
+          <a class="link-btn" href="https://play.google.com/store/apps/details?id=com.temaribet.prepx"><span class="g">▶</span> PrepX</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-in">
+        <span>© 2026 Habtamu Asefa — Addis Ababa, Ethiopia</span>
+        <span>built from scratch · <a href="Resume.html">résumé</a></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

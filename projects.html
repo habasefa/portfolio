@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Habtamu Asefa</title>
+<meta name="description" content="Selected work by Habtamu Asefa — PrepX (AI-native learning platform), react-native-ajora (open-source agent UI), and a biomedical hardware thesis." />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="stylesheet" href="theme.css" />
+<link rel="stylesheet" href="site.css" />
+<link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ====================== NAV ====================== -->
+  <nav class="nav">
+    <div class="nav-in">
+      <a class="brand" href="index.html"><span class="sq"></span> habtamu.asefa <span class="path">~/projects</span></a>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Menu">≡</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#about"><span class="h">#</span> about</a>
+        <a href="index.html#skills"><span class="h">#</span> skills</a>
+        <a href="index.html#experience"><span class="h">#</span> experience</a>
+        <a href="projects.html" class="active"><span class="h">#</span> projects</a>
+        <a href="index.html#contact"><span class="h">#</span> contact</a>
+        <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+        <a class="btn-resume" href="Resume.html">⤓ Résumé</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ====================== HERO ====================== -->
+    <header class="proj-hero">
+      <div class="crumb"><a href="index.html">~/</a><span class="sep">/</span><span class="here">projects</span></div>
+      <h1>Selected work<span class="u">_</span></h1>
+      <p class="sub">A closer look at what I've built — an AI-native learning platform shipped to real students, an open-source agent-UI library with real npm adoption, and a biomedical hardware thesis. The honest version: what the problem was, what I built, and what it runs on.</p>
+
+      <div class="case-index">
+        <a href="#prepx"><span class="n">01</span> PrepX</a>
+        <a href="#ajora"><span class="n">02</span> react-native-ajora</a>
+        <a href="#ulcerguard"><span class="n">03</span> UlcerGuard</a>
+      </div>
+    </header>
+
+    <div class="cases">
+
+      <!-- ============ 01 · PREPX ============ -->
+      <article class="case flagship" id="prepx">
+        <div class="case-file">
+          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+          <span class="path"><b>prepx</b>/README.md</span>
+          <span class="status status--shipped">Shipped</span>
+        </div>
+        <div class="case-body">
+          <aside class="case-meta">
+            <div class="row"><div class="label">Year</div><div class="val mono">2024 — Present</div></div>
+            <div class="row"><div class="label">Role</div><div class="val">Founder &amp; Lead Engineer</div></div>
+            <div class="row full"><div class="label">Stack</div>
+              <div class="stk">
+                <span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">NestJS</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Qdrant</span><span class="chip">Typesense</span><span class="chip">OpenRouter</span><span class="chip">Agno</span><span class="chip">Mastra</span><span class="chip">RAG</span>
+              </div>
+            </div>
+            <div class="row full"><div class="label">Links</div>
+              <div class="case-links">
+                <a href="https://play.google.com/store/apps/details?id=com.temaribet.prepx"><span class="g">▶</span> Google Play</a>
+              </div>
+            </div>
+          </aside>
+          <div class="case-main">
+            <h2>PrepX</h2>
+            <p class="tagline">AI-native learning platform · Ethiopian high-school curriculum</p>
+            <p class="lede">An <b>AI-native study app</b> for Ethiopian high-school students — textbook-grounded AI tutoring, hybrid retrieval over the full national curriculum, offline-first mobile UX, and live learning. Built and shipped with a 3-person team; I owned the full mobile app, the AI pipeline, and the content data model.</p>
+
+            <div class="case-metrics">
+              <div class="case-metric"><div class="num">1,000+</div><div class="lbl">installs · 250 MAU</div></div>
+              <div class="case-metric"><div class="num">5★</div><div class="lbl">Play Store rating</div></div>
+              <div class="case-metric"><div class="num">~229K</div><div class="lbl">curriculum questions indexed</div></div>
+            </div>
+
+            <div class="case-h"><span class="h">#</span> the problem <span class="line"></span></div>
+            <p>Students need affordable, curriculum-aligned help that works on the devices and connections they actually have. Generic AI chat isn't grounded in their textbooks, and unreliable connectivity makes always-online study tools impractical.</p>
+
+            <div class="case-h"><span class="h">#</span> what i built <span class="line"></span></div>
+            <ul class="case-list">
+              <li>The full <b>React Native (Expo)</b> app — study flows, AI chat UX, offline topic access, recent activity, notifications, and live competition features. Grew it to <b>1,000+ installs, 250 MAU, 5★</b> and launched subscription monetization.</li>
+              <li>A <b>hybrid RAG</b> pipeline for textbook-grounded tutoring — <code>vector search</code> (Qdrant) + <code>full-text search</code> (Typesense) — kept <b>model-agnostic</b> across Gemini, GPT, Claude, and open models via OpenRouter so answers stay anchored to real curriculum.</li>
+              <li>A <b>self-referential curriculum graph</b> spanning 4 grades, 6 subjects, and 12 years of national exams — <b>~229K questions, 13.5K quizzes, 5.75K worksheets, and 1.86K flashcard sets</b>, with hierarchical chapters, topics, notes, and references.</li>
+              <li>Backend services with NestJS, FastAPI, and PostgreSQL — powering chat, retrieval, content workflows, notifications, and live competitions, with Agno and Mastra for agent orchestration.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ 02 · REACT-NATIVE-AJORA ============ -->
+      <article class="case" id="ajora">
+        <div class="case-file">
+          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+          <span class="path"><b>react-native-ajora</b>/README.md</span>
+          <span class="status status--shipped">Open source</span>
+        </div>
+        <div class="case-body">
+          <aside class="case-meta">
+            <div class="row"><div class="label">Year</div><div class="val mono">2024 — Present</div></div>
+            <div class="row"><div class="label">Role</div><div class="val">Author &amp; maintainer</div></div>
+            <div class="row full"><div class="label">Stack</div>
+              <div class="stk">
+                <span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">SSE</span><span class="chip">Gemini</span><span class="chip">Tool calling</span>
+              </div>
+            </div>
+            <div class="row full"><div class="label">Links</div>
+              <div class="case-links">
+                <a href="https://www.npmjs.com/package/react-native-ajora"><span class="g">↯</span> npm</a>
+                <a href="https://github.com/habasefa/react-native-ajora"><span class="g">⎇</span> github · ★19</a>
+              </div>
+            </div>
+          </aside>
+          <div class="case-main">
+            <h2>react-native-ajora — agent UI for React Native</h2>
+            <p class="tagline">AG-UI / CopilotKit patterns, brought to mobile</p>
+            <p class="lede">An open-source library billed as <b>"the most complete AI agent UI for React Native."</b> It ports AG-UI / CopilotKit-style agentic interfaces to mobile — the streaming, tool-oriented assistant UX that web has, rebuilt as native-feeling React Native. <b>6,100+ npm downloads, 19 GitHub stars.</b></p>
+
+            <div class="case-metrics">
+              <div class="case-metric"><div class="num">6,100+</div><div class="lbl">npm downloads</div></div>
+              <div class="case-metric"><div class="num">19★</div><div class="lbl">GitHub stars</div></div>
+              <div class="case-metric"><div class="num">586</div><div class="lbl">peak downloads / day</div></div>
+            </div>
+
+            <div class="case-h"><span class="h">#</span> the problem <span class="line"></span></div>
+            <p>Most agentic UI tooling is web-first. Mobile apps that want streaming AI, tool-oriented interactions, threads, and rich assistant UX have to reinvent those patterns by hand — there's no clean, native-feeling equivalent.</p>
+
+            <div class="case-h"><span class="h">#</span> what i built <span class="line"></span></div>
+            <ul class="case-list">
+              <li>An <code>SSE</code>-based <b>streaming message UI</b> for React Native — assistant messages, tool responses, sources, suggestions, thread titles, regeneration, errors, and completion events as first-class concepts.</li>
+              <li>Thread and message <b>state handling</b> for active conversations: pagination, regeneration, streaming state, and history.</li>
+              <li>Backend orchestration for threads, messages, title updates, regeneration, and agent streaming — with <b>Gemini streaming</b> and server-side tool-execution patterns.</li>
+              <li>Published and maintained on <b>npm</b> as a reusable library — adopted to <b>6,100+ downloads</b> with a 586-download peak day.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ 03 · ULCERGUARD ============ -->
+      <article class="case" id="ulcerguard">
+        <div class="case-file">
+          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+          <span class="path"><b>ulcerguard</b>/THESIS.md</span>
+          <span class="status status--thesis">Thesis</span>
+        </div>
+        <div class="case-body">
+          <aside class="case-meta">
+            <div class="row"><div class="label">Year</div><div class="val mono">2024</div></div>
+            <div class="row"><div class="label">Context</div><div class="val">AAU / AAiT thesis</div></div>
+            <div class="row full"><div class="label">Domain</div>
+              <div class="stk">
+                <span class="chip">Embedded</span><span class="chip">Pressure sensors</span><span class="chip">Hardware</span><span class="chip">Biomedical</span>
+              </div>
+            </div>
+            <div class="row full"><div class="label">Links</div>
+              <div class="case-links">
+                <span class="muted">Academic project — no public repo</span>
+              </div>
+            </div>
+          </aside>
+          <div class="case-main">
+            <h2>UlcerGuard — diabetic foot-ulcer prevention footwear</h2>
+            <p class="tagline">Biomedical engineering thesis · hardware prototype</p>
+            <p class="lede">A <b>pressure-sensing footwear prototype</b> designed to help prevent diabetic foot ulcers by detecting high-pressure regions in diabetic patients' feet before they become wounds.</p>
+
+            <div class="case-h"><span class="h">#</span> the problem <span class="line"></span></div>
+            <p>Diabetic foot ulcers often start from sustained pressure that patients can't feel due to reduced sensation. Catching those high-pressure regions early is a preventative-health problem as much as a hardware one.</p>
+
+            <div class="case-h"><span class="h">#</span> what i built <span class="line"></span></div>
+            <ul class="case-list">
+              <li>Designed a pressure-sensing footwear prototype that <b>detects high-pressure regions</b> across the foot to flag ulcer risk early.</li>
+              <li>Combined <b>biomedical problem analysis</b>, embedded pressure sensors, hardware prototyping, and preventative health monitoring into a single working device.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ====================== CTA ====================== -->
+    <div class="proj-cta">
+      <p>// that's the work — let's talk about what's next</p>
+      <div class="row">
+        <a class="cta cta-primary" href="index.html#contact">Get in touch →</a>
+        <a class="cta cta-ghost" href="Resume.html">⤓ Download résumé</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-in">
+        <span>© 2026 Habtamu Asefa — Addis Ababa, Ethiopia</span>
+        <span><a href="index.html">← back home</a> · <a href="Resume.html">résumé</a></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // minimal: theme + mobile nav (no terminal here)
+  (function () {
+    var root = document.documentElement;
+    var saved = localStorage.getItem('habtamu-theme');
+    if (saved) root.setAttribute('data-theme', saved);
+    var tg = document.getElementById('themeToggle');
+    if (tg) tg.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') !== 'light';
+      var next = dark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('habtamu-theme', next);
+    });
+    var nt = document.getElementById('navToggle'), nl = document.getElementById('navLinks');
+    if (nt && nl) {
+      nt.addEventListener('click', function () { nl.classList.toggle('open'); });
+      nl.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { nl.classList.remove('open'); }); });
+    }
+  })();
+</script>
+</body>
+</html>

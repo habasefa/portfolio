@@ -1,0 +1,20 @@
+# Design handoff source (reference only — not part of the deployed site)
+Resume/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node / build (in case the site is ported to a framework later)
+node_modules/
+dist/
+.vercel/
+
+# Generated PDF preview artifacts
+*_preview.png
+
+# resume print build temp
+_resume_print.html

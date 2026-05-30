@@ -1,0 +1,116 @@
+/* =========================================================================
+   Projects page — case studies
+   ========================================================================= */
+
+.proj-hero { padding: 52px 0 24px; }
+.proj-hero .crumb { font-family: var(--font-mono); font-size: 13px; color: var(--fg-2); margin-bottom: 16px; }
+.proj-hero .crumb a { color: var(--fg-2); text-decoration: none; }
+.proj-hero .crumb a:hover { color: var(--accent); }
+.proj-hero .crumb .sep { color: var(--fg-3); margin: 0 7px; }
+.proj-hero .crumb .here { color: var(--accent); }
+.proj-hero h1 {
+  font-family: var(--font-mono); font-weight: 800; letter-spacing: -0.03em;
+  font-size: clamp(34px, 5.5vw, 58px); line-height: 1; margin: 0; color: var(--fg-0);
+}
+.proj-hero h1 .u { color: var(--accent); }
+.proj-hero .sub { color: var(--fg-2); font-size: var(--t-md); max-width: 62ch; margin: 20px 0 0; line-height: 1.6; }
+
+/* index strip — jump links */
+.case-index { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 8px; }
+.case-index a {
+  font-family: var(--font-mono); font-size: 12px; color: var(--fg-2); text-decoration: none;
+  border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 7px 14px;
+  transition: all var(--dur) var(--ease); display: inline-flex; align-items: center; gap: 7px;
+}
+.case-index a:hover { border-color: var(--accent); color: var(--accent); }
+.case-index a .n { color: var(--fg-3); }
+.case-index a:hover .n { color: var(--accent); }
+
+/* ---- the case study ---- */
+.cases { display: flex; flex-direction: column; gap: 28px; padding: 36px 0 24px; }
+
+.case {
+  scroll-margin-top: 90px;
+  background: var(--bg-1); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  overflow: hidden; box-shadow: var(--shadow-card);
+}
+.case.flagship { border-color: var(--border-glow); }
+
+.case-file {
+  display: flex; align-items: center; gap: 12px; padding: 11px 16px;
+  background: var(--bg-2); border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono); font-size: 12px; color: var(--fg-2);
+}
+.case-file .path { color: var(--fg-1); }
+.case-file .path b { color: var(--fg-0); }
+.case-file .status {
+  margin-left: auto; font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: var(--radius-pill); border: 1px solid var(--border);
+}
+.status--shipped { color: var(--syn-green); border-color: color-mix(in srgb, var(--syn-green) 45%, transparent); }
+.status--exp     { color: var(--accent);    border-color: var(--border-glow); }
+.status--research{ color: var(--syn-blue);  border-color: color-mix(in srgb, var(--syn-blue) 45%, transparent); }
+.status--thesis  { color: var(--syn-purple);border-color: color-mix(in srgb, var(--syn-purple) 45%, transparent); }
+
+.case-body { display: grid; grid-template-columns: 232px 1fr; gap: 0; }
+.case-meta {
+  padding: 26px 24px; border-right: 1px solid var(--border-soft);
+  background: color-mix(in srgb, var(--bg-2) 35%, transparent);
+}
+.case-meta .label { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--fg-3); margin: 0 0 6px; }
+.case-meta .row { margin-bottom: 18px; }
+.case-meta .val { font-size: 14px; color: var(--fg-1); }
+.case-meta .val.mono { font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
+.case-meta .stk { display: flex; flex-wrap: wrap; gap: 6px; }
+.case-meta .stk .chip { background: var(--bg-1); }
+.case-links { display: flex; flex-direction: column; gap: 8px; }
+.case-links a {
+  font-family: var(--font-mono); font-size: 12.5px; color: var(--fg-1); text-decoration: none;
+  border: 1px solid var(--border); border-radius: 7px; padding: 9px 12px;
+  display: inline-flex; align-items: center; gap: 9px; transition: all var(--dur) var(--ease);
+}
+.case-links a:hover { border-color: var(--accent); color: var(--accent); transform: translateX(2px); }
+.case-links a .g { color: var(--accent); }
+.case-links .muted { color: var(--fg-3); font-family: var(--font-mono); font-size: 12px; padding: 4px 0; }
+
+.case-main { padding: 28px 30px 30px; }
+.case-main h2 { font-size: clamp(22px, 3vw, 30px); color: var(--fg-0); margin: 0 0 4px; letter-spacing: -0.01em; }
+.case-main .tagline { font-family: var(--font-mono); font-size: 13px; color: var(--accent); margin: 0 0 18px; }
+.case-main .lede { color: var(--fg-1); font-size: var(--t-md); line-height: 1.62; margin: 0 0 22px; }
+.case-main .lede b { color: var(--fg-0); font-weight: 600; }
+
+.case-h {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--fg-2); margin: 24px 0 12px; display: flex; align-items: center; gap: 9px;
+}
+.case-h .h { color: var(--accent); }
+.case-h .line { flex: 1; height: 1px; background: var(--border-soft); }
+
+.case-main p { color: var(--fg-2); line-height: 1.62; margin: 0 0 14px; }
+.case-main p b { color: var(--fg-1); font-weight: 600; }
+
+.case-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.case-list li { position: relative; padding-left: 24px; color: var(--fg-1); font-size: 14.5px; line-height: 1.55; }
+.case-list li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); font-family: var(--font-mono); }
+.case-list li b { color: var(--fg-0); font-weight: 600; }
+.case-list li code { font-family: var(--font-mono); font-size: 12.5px; color: var(--syn-green); }
+
+/* highlight callouts (only where a real metric exists) */
+.case-metrics { display: flex; flex-wrap: wrap; gap: 12px; margin: 4px 0 4px; }
+.case-metric { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 16px; background: var(--bg-2); }
+.case-metric .num { font-family: var(--font-mono); font-size: 22px; font-weight: 800; color: var(--accent); }
+.case-metric .lbl { font-size: 12px; color: var(--fg-2); margin-top: 2px; }
+
+/* bottom CTA */
+.proj-cta { text-align: center; padding: 24px 0 8px; }
+.proj-cta p { font-family: var(--font-mono); color: var(--fg-2); font-size: 14px; margin: 0 0 18px; }
+.proj-cta .row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 760px) {
+  .case-body { grid-template-columns: 1fr; }
+  .case-meta { border-right: none; border-bottom: 1px solid var(--border-soft);
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  .case-meta .row.full { grid-column: span 2; }
+  .case-main { padding: 22px 20px; }
+}
