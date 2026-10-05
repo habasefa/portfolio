@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Projects — Habtamu Asefa</title>
-<meta name="description" content="Selected work by Habtamu Asefa — PrepX (AI-native learning platform), react-native-ajora (open-source agent UI), and a biomedical hardware thesis." />
+<meta name="description" content="Selected work by Habtamu Asefa — PrepX (AI-native learning platform), Liqawnt (low-resource speech research), react-native-ajora (open-source agent UI), and a biomedical hardware thesis." />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="stylesheet" href="theme.css" />
@@ -37,12 +37,13 @@
     <header class="proj-hero">
       <div class="crumb"><a href="index.html">~/</a><span class="sep">/</span><span class="here">projects</span></div>
       <h1>Selected work<span class="u">_</span></h1>
-      <p class="sub">A closer look at what I've built — an AI learning platform used by real students, an open-source agent-UI library with real npm adoption, and a biomedical hardware thesis. The honest version: what the problem was, what I built, and what it runs on.</p>
+      <p class="sub">A closer look at what I've built — an AI learning platform, low-resource speech research, an open-source agent-UI library, and a biomedical hardware thesis. The honest version: what the problem was, what I built, and what it runs on.</p>
 
       <div class="case-index">
         <a href="#prepx"><span class="n">01</span> PrepX</a>
         <a href="#ajora"><span class="n">02</span> react-native-ajora</a>
         <a href="#ulcerguard"><span class="n">03</span> UlcerGuard</a>
+        <a href="#liqawnt"><span class="n">04</span> Liqawnt</a>
       </div>
     </header>
 
@@ -66,6 +67,7 @@
             </div>
             <div class="row full"><div class="label">Links</div>
               <div class="case-links">
+                <a href="https://prepx.temaribet.io/"><span class="g">◆</span> Website &amp; live stats</a>
                 <a href="https://play.google.com/store/apps/details?id=com.temaribet.prepx"><span class="g">▶</span> Google Play</a>
               </div>
             </div>
@@ -76,9 +78,9 @@
             <p class="lede">An <b>AI study app</b> for Ethiopian high-school students — curriculum-grounded AI tutoring, hybrid retrieval over the full national curriculum, offline-first mobile UX, and live learning. Built and shipped with a 3-person team; I owned the full mobile app, the AI pipeline, and the content data model.</p>
 
             <div class="case-metrics">
-              <div class="case-metric"><div class="num">1,000+</div><div class="lbl">installs · 250 MAU</div></div>
-              <div class="case-metric"><div class="num">5★</div><div class="lbl">Play Store rating</div></div>
-              <div class="case-metric"><div class="num">~229K</div><div class="lbl">curriculum questions indexed</div></div>
+              <div class="case-metric"><div class="num">2,600+</div><div class="lbl">downloads</div></div>
+              <div class="case-metric"><div class="num">93,060+</div><div class="lbl">questions answered · Oct 5, 2026</div></div>
+              <div class="case-metric"><div class="num">1,800+</div><div class="lbl">curriculum topics</div></div>
             </div>
 
             <div class="case-h"><span class="h">#</span> the problem <span class="line"></span></div>
@@ -86,9 +88,10 @@
 
             <div class="case-h"><span class="h">#</span> what i built <span class="line"></span></div>
             <ul class="case-list">
-              <li>The full <b>React Native (Expo)</b> app — study flows, AI chat UX, offline topic access, recent activity, notifications, and live competition features. Grew it to <b>1,000+ installs, 250 MAU, 5★</b> and launched subscription monetization.</li>
+              <li>The full <b>React Native (Expo)</b> app — study flows, AI chat UX, offline topic access, recent activity, notifications, and live competition features. Grew it to <b>2,600+ downloads and 93,060+ questions answered</b> and launched Free, Go, and Pro subscriptions, including referral access and leaderboard rewards.</li>
               <li>A <b>hybrid RAG</b> pipeline for textbook-grounded tutoring — <code>vector search</code> (Qdrant) + <code>full-text search</code> (Typesense) — kept <b>model-agnostic</b> across Gemini, GPT, Claude, and open models via OpenRouter so answers stay anchored to real curriculum.</li>
-              <li>A <b>self-referential curriculum graph</b> spanning 4 grades, 6 subjects, and 12 years of national exams — <b>~229K questions, 13.5K quizzes, 5.75K worksheets, and 1.86K flashcard sets</b>, with hierarchical chapters, topics, notes, and references.</li>
+              <li>A <b>self-referential curriculum graph</b> spanning Grades 9–12 — <b>1,800+ topics and 220,000+ practice questions</b>, with hierarchical chapters, topics, notes, and references.</li>
+              <li><b>Chapter Essentials</b> for condensed revision; chapter downloads for offline study; student groups, live challenges, and multi-grade leaderboards.</li>
               <li>Backend services with NestJS, FastAPI, and PostgreSQL — powering chat, retrieval, content workflows, notifications, and live competitions, with Agno and Mastra for agent orchestration.</li>
             </ul>
           </div>
@@ -182,6 +185,31 @@
         </div>
       </article>
 
+      <article class="case" id="liqawnt">
+        <div class="case-file">
+          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+          <span class="path"><b>liqawnt</b>/RESEARCH.md</span>
+          <span class="status">In progress</span>
+        </div>
+        <div class="case-body">
+          <aside class="case-meta">
+            <div class="row"><div class="label">Year</div><div class="val mono">2026 — Present</div></div>
+            <div class="row"><div class="label">Focus</div><div class="val">AI research &amp; engineering</div></div>
+            <div class="row full"><div class="label">Direction</div><div class="stk"><span class="chip">TTS</span><span class="chip">ASR</span><span class="chip">Speech-to-speech</span><span class="chip">Multimodal AI</span></div></div>
+          </aside>
+          <div class="case-main">
+            <h2>Liqawnt — low-resource speech models</h2>
+            <p class="tagline">Speech AI for Amharic, Afaan Oromo, and Tigrinya</p>
+            <p class="lede">Working toward speech models that make AI useful in languages underserved by current systems. The long-term direction is <b>speech-interactive models</b> that understand, reason, and respond through speech.</p>
+            <div class="case-h"><span class="h">#</span> research direction <span class="line"></span></div>
+            <ul class="case-list">
+              <li>Text-to-speech, automatic speech recognition, and speech-to-speech language models.</li>
+              <li>Audio representation learning and speech generation, with an interest in multimodal interaction.</li>
+              <li>Practical training, fine-tuning, inference, and deployment under limited compute.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
     </div>
 
     <!-- ====================== CTA ====================== -->

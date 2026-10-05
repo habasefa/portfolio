@@ -189,10 +189,10 @@ body {
   }
   .page:last-child { break-after: auto; page-break-after: auto; }
   /* scale inner content to guarantee single-sheet fit; frame stays full A4 */
-  .page-body { zoom: 0.94; flex: 1; }
+  .page-body { zoom: 0.90; flex: 1; }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .page { width: 100%; min-height: 0; }
   .page-body { padding: 24px; }
   .skills, .twocol { grid-template-columns: 1fr; }

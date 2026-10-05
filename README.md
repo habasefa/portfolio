@@ -1,6 +1,6 @@
 # Habtamu Asefa — Portfolio + Résumé
 
-Personal portfolio site and a matching two-page résumé for **Habtamu Asefa — Full-Stack AI Engineer**.
+Personal portfolio site and a matching two-page résumé for **Habtamu Asefa — AI Research Engineer**.
 Developer-terminal / IDE aesthetic (deep slate, burnt-orange accent). Static HTML/CSS/JS — no build step, no framework.
 
 All **content** is the real, verified material from the candidate interview (PrepX, Temaribet, react-native-ajora,
@@ -10,7 +10,7 @@ client work). The **design** comes from the Claude Design handoff in `Resume/` (
 | File | Role |
 |---|---|
 | `index.html` | Portfolio single page (hero terminal, about, skills, experience, projects, contact) |
-| `projects.html` | Case studies — PrepX, react-native-ajora, UlcerGuard |
+| `projects.html` | Case studies — PrepX, react-native-ajora, UlcerGuard, Liqawnt |
 | `Resume.html` | Two-page A4 résumé (dark/light toggle + Save-PDF button) |
 | `theme.css` | Design tokens (colors, type, spacing) — source of truth |
 | `site.css` / `projects.css` / `resume.css` | Component + résumé styles |
@@ -55,6 +55,13 @@ rm _resume_print.html
 ```
 
 ## Notes / open items
-- No portfolio domain yet — links use the real Play Store (PrepX) and npm (`react-native-ajora`) URLs.
+- Published at https://habasefa.github.io/portfolio/. PrepX links to https://prepx.temaribet.io/ and Google Play.
 - For large job boards that prefer a single-column scanner-safe résumé, the PDF here parses cleanly as text;
   a plain one-column variant can be added if a specific ATS rejects it.
+
+## Content refresh — October 5, 2026
+
+- PrepX downloads: 2,600+ (provided by Habtamu).
+- Questions answered: 93,060; topics: 1,824, from `https://api.prepx.temaribet.io/public/stats`, fetched October 5, 2026. The portfolio uses 1,800+ topics.
+- Questions answered measure student activity; 220,000+ practice questions describe the content library. Downloads are distinct from registered students.
+- Liqawnt is presented as ongoing low-resource speech research, without claims of released models or benchmark results.

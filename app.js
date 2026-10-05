@@ -79,13 +79,14 @@
   // intro sequence: typed commands + outputs
   var boot = [
     { cmd: 'whoami' },
-    { out: '<span class="ok">Habtamu Asefa</span> — Full-Stack AI Engineer, Addis Ababa' },
+    { out: '<span class="ok">Habtamu Asefa</span> — AI Research Engineer, Addis Ababa' },
     { cmd: 'cat role.txt' },
-    { out: 'Full-Stack AI Engineer · AI Product Engineer · ships end-to-end' },
+    { out: 'AI Research Engineer · AI products · speech models · systems' },
     { cmd: './summary --short' },
     { out: 'Building <span class="acc">AI-native products</span> end-to-end:\n  <span class="key">agents</span>, <span class="key">RAG</span>, <span class="key">retrieval</span>, mobile, backend, infra.' },
-    { out: 'Founder of <span class="acc">PrepX</span> (1,000+ users, 250 MAU) and <span class="acc">Temaribet</span> (4,000+ tutors).' },
+    { out: 'Founder of <span class="acc">PrepX</span> — 2,600+ downloads, 93,060+ questions answered.' },
     { out: 'Author of <span class="acc">react-native-ajora</span> — 6,100+ npm downloads, 19★.' },
+    { out: 'Building <span class="acc">Liqawnt</span>: low-resource TTS, ASR, and speech-to-speech models.' },
     { cmd: 'help' },
     { out: 'available: <span class="acc">about</span> · <span class="acc">skills</span> · <span class="acc">experience</span> · <span class="acc">projects</span> · <span class="acc">contact</span> · <span class="acc">resume</span> · <span class="acc">clear</span>' }
   ];
@@ -131,10 +132,10 @@
   /* ---------- interactive commands ---------- */
   var responses = {
     help: 'commands: <span class="acc">about</span> · <span class="acc">skills</span> · <span class="acc">experience</span> · <span class="acc">projects</span> · <span class="acc">contact</span> · <span class="acc">resume</span> · <span class="acc">clear</span>',
-    about: 'Full-Stack AI Engineer building AI-native products end-to-end — RAG, agents, retrieval, mobile, backend, and deployment.',
+    about: 'AI Research Engineer and founder building PrepX and working on low-resource speech models at Liqawnt. Interests: speech, multimodal AI, inference, fine-tuning, and deployment.',
     skills: 'ai: <span class="key">agents, RAG, tool-calling, evals</span> · search: <span class="key">Qdrant, Typesense (hybrid)</span> · stack: <span class="key">React Native, NestJS, FastAPI, PostgreSQL</span>',
-    experience: 'PrepX (founder, 2024–) · Freelance for US&amp;EU startups (2023–) · Temaribet (founder, 2019–2025, 4,000+ tutors)',
-    projects: 'PrepX AI tutoring app · react-native-ajora (6,100+ npm downloads) · UlcerGuard thesis — full case studies at <a href="projects.html">/projects</a>',
+    experience: 'Liqawnt (speech research, 2026–) · PrepX (founder, 2024–) · Freelance for US&amp;EU startups (2023–) · Temaribet (founder, 2019–2025, 4,000+ tutors)',
+    projects: 'Liqawnt low-resource speech research · PrepX AI tutoring app · react-native-ajora (6,100+ npm downloads) · UlcerGuard thesis — full case studies at <a href="projects.html">/projects</a>',
     contact: 'email: <a href="mailto:nazrihabtish@gmail.com">nazrihabtish@gmail.com</a> · github: <a href="https://github.com/habasefa">habasefa</a> · <a href="https://www.linkedin.com/in/habtamu-asefa-4b5459195/">linkedin</a>',
     resume: 'opening résumé… <a href="Resume.html">Resume.html</a>'
   };
