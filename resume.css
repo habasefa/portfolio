@@ -1,201 +1,189 @@
-/* =========================================================================
-   Resume — two-page, A4, developer-terminal aesthetic.
-   ========================================================================= */
-
-html, body { margin: 0; padding: 0; }
-body {
-  background: var(--bg-0);
-  font-family: var(--font-sans);
-  color: var(--fg-1);
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-  line-height: 1.5;
+* {
+  box-sizing: border-box;
 }
-
-/* floating controls (screen only) */
+html {
+  color-scheme: light;
+}
+body {
+  margin: 0;
+  background: #f0f0ed;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.25;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: 3px;
+}
 .toolbar {
-  position: fixed; top: 18px; right: 18px; z-index: 50;
-  display: flex; gap: 8px;
+  max-width: 210mm;
+  margin: 22px auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 13px;
 }
 .toolbar button {
-  font-family: var(--font-mono); font-size: 12px; font-weight: 600;
-  color: var(--fg-1); background: var(--bg-2);
-  border: 1px solid var(--border); border-radius: 7px;
-  padding: 8px 12px; cursor: pointer; transition: all var(--dur) var(--ease);
-  display: inline-flex; align-items: center; gap: 7px;
+  font: inherit;
+  background: none;
+  color: inherit;
+  border: 1px solid #999;
+  padding: 6px 12px;
+  cursor: pointer;
 }
-.toolbar button:hover { background: var(--bg-3); color: var(--fg-0); border-color: var(--accent); }
-.toolbar button .k { color: var(--accent); }
-
-/* page stack */
-.pages { padding: 40px 16px 64px; display: flex; flex-direction: column; align-items: center; gap: 28px; }
-
-.page {
-  width: 210mm; min-height: 297mm;
-  background: var(--bg-1);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-pop);
-  position: relative;
-  display: flex; flex-direction: column;
-  overflow: hidden;
+.resume {
+  max-width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 30px;
+  padding: 13mm 15mm;
+  background: #fff;
+  box-shadow: 0 1px 8px #00000012;
 }
-.page-body { padding: 12mm 16mm 10mm; flex: 1; }
-.page--1 .page-body { padding-top: 0; }
-
-/* subtle grid texture */
-.page::before {
-  content: ""; position: absolute; inset: 0; pointer-events: none;
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 22px 22px;
+.resume-header h1 {
+  font-size: 24pt;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin: 0;
 }
-.page > * { position: relative; z-index: 1; }
-
-/* ---- window chrome header (page 1) ---- */
-.chrome {
-  display: flex; align-items: center; gap: 14px;
-  padding: 11px 16px;
-  background: var(--bg-2);
-  border-bottom: 1px solid var(--border);
+.headline {
+  font-size: 12pt;
+  font-weight: 600;
+  margin: 5px 0 7px;
 }
-.chrome .file {
-  font-family: var(--font-mono); font-size: 12px; color: var(--fg-2);
+.contact-line {
+  font-size: 9.5pt;
+  margin: 3px 0;
+  line-height: 1.45;
 }
-.chrome .file b { color: var(--fg-0); font-weight: 600; }
-.chrome .tag {
-  margin-left: auto; font-family: var(--font-mono); font-size: 11px;
-  color: var(--accent); border: 1px solid var(--border); border-radius: 5px;
-  padding: 3px 8px;
-}
-
-/* ---- identity header ---- */
-.idline { font-family: var(--font-mono); font-size: 12.5px; color: var(--fg-3); margin: 16px 0 8px; }
-.idline .prompt { margin-right: 6px; }
-.name {
-  font-family: var(--font-mono); font-weight: 800;
-  font-size: 36px; letter-spacing: -0.02em; line-height: 1;
-  color: var(--fg-0); margin: 0;
-}
-.name .dot { color: var(--accent); }
-.role {
-  font-family: var(--font-mono); font-size: 13.5px; font-weight: 500;
-  color: var(--fg-1); margin: 8px 0 0; letter-spacing: -0.01em;
-}
-.role .sep { color: var(--accent); margin: 0 8px; }
-
-.contact {
-  display: flex; flex-wrap: wrap; gap: 5px 18px;
-  margin-top: 10px; font-family: var(--font-mono); font-size: 11.5px;
-}
-.contact a, .contact span {
-  color: var(--fg-2); text-decoration: none;
-  display: inline-flex; align-items: center; gap: 6px;
-}
-.contact a:hover { color: var(--accent); }
-.contact .ic { color: var(--accent); }
-
 .summary {
-  margin-top: 13px; padding: 11px 14px;
-  background: var(--bg-2); border: 1px solid var(--border-soft);
-  border-left: 2px solid var(--accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-size: 13px; line-height: 1.5; color: var(--fg-1); max-width: 100%;
+  margin: 14px 0 0;
 }
-.summary .c { font-family: var(--font-mono); color: var(--fg-3); font-size: 11.5px; display: block; margin-bottom: 7px; }
-.summary strong { color: var(--fg-0); font-weight: 600; }
-
-/* ---- section ---- */
-.section { margin-top: 15px; }
-.sec-head {
-  display: flex; align-items: baseline; gap: 10px;
-  font-family: var(--font-mono); font-size: 13px; font-weight: 700;
-  color: var(--fg-0); margin-bottom: 10px;
-  padding-bottom: 6px; border-bottom: 1px solid var(--border);
+.resume section {
+  margin-top: 10px;
 }
-.sec-head .hash { color: var(--accent); }
-.sec-head .n { color: var(--fg-3); font-weight: 500; margin-left: auto; font-size: 11px; }
-
-/* ---- skills grid ---- */
-.skills { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
-.skill { display: grid; grid-template-columns: 132px 1fr; gap: 12px; align-items: start; }
-.skill .key { font-family: var(--font-mono); font-size: 11px; color: var(--accent); font-weight: 600; padding-top: 1px; }
-.skill .val { font-size: 12px; color: var(--fg-1); line-height: 1.4; }
-
-/* ---- experience / project entries ---- */
-.entry { display: grid; grid-template-columns: 150px 1fr; gap: 18px; padding: 10px 0; }
-.entry + .entry { border-top: 1px solid var(--border-soft); }
-.entry .meta { font-family: var(--font-mono); }
-.entry .when { font-size: 11px; color: var(--accent); font-weight: 600; }
-.entry .where { font-size: 11px; color: var(--fg-2); margin-top: 5px; }
-.entry .stack { margin-top: 9px; display: flex; flex-wrap: wrap; gap: 4px; }
-.entry .stack span {
-  font-family: var(--font-mono); font-size: 9.5px; color: var(--fg-2);
-  border: 1px solid var(--border); border-radius: 4px; padding: 2px 6px;
-  background: var(--bg-2);
+.resume h2 {
+  font-size: 10.5pt;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #444;
+  padding-bottom: 4px;
+  margin: 0 0 8px;
+  font-weight: 700;
 }
-.entry .role-t { font-size: 15px; font-weight: 700; color: var(--fg-0); margin: 0; letter-spacing: -0.01em; }
-.entry .org { font-family: var(--font-mono); font-size: 11.5px; color: var(--accent); margin-top: 2px; }
-.entry .desc { font-size: 12px; color: var(--fg-2); margin: 7px 0 0; font-style: italic; }
-.entry ul { margin: 6px 0 0; padding: 0; list-style: none; }
+.entry {
+  margin-top: 8px;
+  break-inside: avoid;
+}
+.entry:first-of-type {
+  margin-top: 0;
+}
+.entry-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 18px;
+}
+.entry-title h3 {
+  font-size: 10.5pt;
+  margin: 0;
+  font-weight: 700;
+}
+.entry-title h3 span {
+  font-weight: 400;
+}
+.date {
+  font-size: 9.5pt;
+  white-space: nowrap;
+  color: #444;
+}
+.entry ul {
+  margin: 4px 0 0;
+  padding-left: 16px;
+}
 .entry li {
-  font-size: 12px; color: var(--fg-1); line-height: 1.46;
-  padding-left: 17px; position: relative; margin-bottom: 3px;
+  margin-top: 3px;
+  padding-left: 1px;
 }
-.entry li::before {
-  content: "→"; position: absolute; left: 0; top: 0;
-  color: var(--accent); font-family: var(--font-mono); font-size: 11px;
+.compact p,
+.education p {
+  margin: 3px 0 0;
 }
-.entry li b, .entry li strong { color: var(--fg-0); font-weight: 600; }
-.entry li code, .hl {
-  font-family: var(--font-mono); font-size: 11px;
-  color: var(--syn-green); background: transparent;
+.skills p {
+  margin: 3px 0 0;
 }
-
-/* compact entries (projects) */
-.entry--sm { padding: 8px 0; }
-.entry--sm .role-t { font-size: 13.5px; }
-
-/* education + achievements two-up on page 2 */
-.twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
-
-.edu .deg { font-size: 13.5px; font-weight: 700; color: var(--fg-0); }
-.edu .school { font-family: var(--font-mono); font-size: 11.5px; color: var(--accent); margin-top: 3px; }
-.edu .det { font-size: 11.5px; color: var(--fg-2); margin-top: 6px; line-height: 1.5; }
-
-.ach { margin: 0; padding: 0; list-style: none; }
-.ach li { font-size: 12px; color: var(--fg-1); line-height: 1.5; padding-left: 17px; position: relative; margin-bottom: 7px; }
-.ach li::before { content: "§"; position: absolute; left: 0; color: var(--accent); font-family: var(--font-mono); }
-.ach li b { color: var(--fg-0); font-weight: 600; }
-
-/* footer line */
-.foot {
-  font-family: var(--font-mono); font-size: 10.5px; color: var(--fg-3);
-  padding: 9px 16mm; border-top: 1px solid var(--border);
-  display: flex; justify-content: space-between; background: var(--bg-2);
+.updated {
+  font-size: 8.5pt;
+  color: #555;
+  margin: 10px 0 0;
 }
-.foot a { color: var(--fg-2); text-decoration: none; }
-
-/* ---- print ---- */
+@page {
+  size: A4;
+  margin: 0;
+}
 @media print {
-  @page { size: A4; margin: 0; }
-  body { background: #fff; }
-  .toolbar { display: none !important; }
-  .pages { padding: 0; gap: 0; }
-  .page {
-    width: 210mm; height: 297mm; min-height: 0; box-shadow: none; border: none;
-    break-after: page; page-break-after: always;
-    overflow: hidden;
-    display: flex; flex-direction: column;
+  body {
+    background: #fff;
   }
-  .page:last-child { break-after: auto; page-break-after: auto; }
-  /* scale inner content to guarantee single-sheet fit; frame stays full A4 */
-  .page-body { zoom: 0.90; flex: 1; }
+  .toolbar {
+    display: none;
+  }
+  .resume {
+    width: 210mm;
+    max-width: none;
+    min-height: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  .resume a {
+    text-decoration: none;
+  }
+  section {
+    break-inside: avoid;
+  }
 }
-
-@media screen and (max-width: 800px) {
-  .page { width: 100%; min-height: 0; }
-  .page-body { padding: 24px; }
-  .skills, .twocol { grid-template-columns: 1fr; }
-  .entry { grid-template-columns: 1fr; gap: 8px; }
-  .name { font-size: 32px; }
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 14px;
+  }
+  .resume {
+    width: 100%;
+    min-height: 0;
+    padding: 27px 22px;
+    box-shadow: none;
+  }
+  .toolbar {
+    justify-content: flex-start;
+    padding: 0 22px;
+  }
+  .entry-title {
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .date {
+    font-size: 12px;
+  }
+  .contact-line {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+  .resume h2 {
+    margin-top: 20px;
+  }
+  .resume-header h1 {
+    font-size: 30px;
+  }
+  .entry-title h3 {
+    font-size: 14px;
+  }
 }

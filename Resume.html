@@ -1,243 +1,194 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Habtamu Asefa — Resume</title>
-<meta name="description" content="Habtamu Asefa — AI Research Engineer. Resume." />
-<link rel="icon" type="image/png" href="favicon.png" />
-<link rel="stylesheet" href="theme.css" />
-<link rel="stylesheet" href="resume.css" />
-</head>
-<body>
-
-<div class="toolbar">
-  <button id="themeBtn" title="Toggle light/dark"><span class="k">◐</span> <span id="themeLabel">Light mode</span></button>
-  <button id="printBtn" title="Save as PDF"><span class="k">⤓</span> Save PDF</button>
-</div>
-
-<div class="pages">
-
-  <!-- ============================= PAGE 1 ============================= -->
-  <section class="page page--1" data-screen-label="Resume p.1">
-    <div class="chrome">
-      <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
-      <span class="file"><b>habtamu-asefa</b> — resume.md</span>
-      <span class="tag">~/ai-research-engineer</span>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Habtamu Asefa | Résumé</title>
+    <meta
+      name="description"
+      content="Habtamu Asefa, AI Research Engineer. Speech modeling, AI applications, and production software."
+    />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="resume.css?v=20261005-2" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <a href="index.html">Portfolio</a
+      ><a href="Habtamu_Asefa_Resume.pdf" download>Download PDF</a
+      ><button id="printBtn">Print</button>
     </div>
-
-    <div class="page-body">
-      <div class="idline"><span class="prompt">❯</span> whoami</div>
-      <h1 class="name">Habtamu Asefa<span class="dot">_</span></h1>
-      <div class="role">AI Research Engineer<span class="sep">/</span>AI Products<span class="sep">/</span>Speech Models</div>
-
-      <div class="contact">
-        <span><span class="ic">⌖</span> Addis Ababa, Ethiopia · Remote / relocation</span>
-        <a href="mailto:nazrihabtish@gmail.com"><span class="ic">@</span> nazrihabtish@gmail.com</a>
-        <span><span class="ic">☎</span> +251 99 115 0331</span>
-        <a href="https://www.linkedin.com/in/habtamu-asefa-4b5459195/"><span class="ic">in</span> linkedin.com/in/habtamu-asefa</a>
-        <a href="https://github.com/habasefa"><span class="ic">⎇</span> github.com/habasefa</a>
-        <a href="https://www.npmjs.com/package/react-native-ajora"><span class="ic">↯</span> npm/react-native-ajora</a>
-      </div>
-
-      <div class="summary">
-        <span class="c">// summary</span>
-        AI Research Engineer and founder building <strong>PrepX</strong> (2,600+ downloads, 93,060+ questions answered) and low-resource speech models at <strong>Liqawnt</strong>. Ships LLM agents, RAG, mobile apps, and backend services to production. Author of <strong>react-native-ajora</strong> (6,100+ npm downloads); previously founded <strong>Temaribet</strong>. BSc Biomedical Engineering, Addis Ababa University.
-      </div>
-
-      <!-- skills -->
-      <div class="section">
-        <div class="sec-head"><span class="hash">#</span> technical_skills <span class="n">— 8 domains</span></div>
+    <main class="resume" id="main">
+      <header class="resume-header">
+        <h1>Habtamu Asefa</h1>
+        <p class="headline">AI Research Engineer</p>
+        <p class="contact-line">
+          Addis Ababa, Ethiopia ·
+          <a href="mailto:nazrihabtish@gmail.com">nazrihabtish@gmail.com</a> ·
+          <a href="tel:+251991150331">+251 99 115 0331</a>
+        </p>
+        <p class="contact-line">
+          <a href="https://github.com/habasefa">github.com/habasefa</a> ·
+          <a href="https://habasefa.github.io/portfolio/"
+            >habasefa.github.io/portfolio</a
+          >
+          ·
+          <a href="https://www.linkedin.com/in/habtamu-asefa-4b5459195/"
+            >LinkedIn</a
+          >
+        </p>
+      </header>
+      <p class="summary">
+        AI research engineer working on Amharic speech models, with production
+        experience in Python, TypeScript, React Native, and backend services.
+        Founder of PrepX.
+      </p>
+      <section>
+        <h2>Experience</h2>
+        <article class="entry">
+          <div class="entry-title">
+            <h3>Liqawnt <span>| AI Research &amp; Engineering</span></h3>
+            <span class="date">2026-present</span>
+          </div>
+          <ul>
+            <li>
+              Develop an Amharic TTS pipeline for text normalization, audio
+              preparation, synthesis, and evaluation.
+            </li>
+            <li>
+              Implemented VITS encoder-side fine-tuning in PyTorch with
+              monotonic alignment search, freezing the waveform decoder to
+              reduce training memory.
+            </li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry-title">
+            <h3>
+              <a href="https://prepx.temaribet.io/">PrepX</a>
+              <span>| Founder &amp; Lead Engineer</span>
+            </h3>
+            <span class="date">2024-present</span>
+          </div>
+          <ul>
+            <li>
+              Built and released a study app for Ethiopian Grade 9-12 students;
+              reached
+              <strong>2,600+ downloads and 93,173+ questions answered</strong>
+              following the March 2026 public launch.
+            </li>
+            <li>
+              Developed React Native and Expo study flows, offline downloads,
+              streamed AI chat, and live competitions; built FastAPI and NestJS
+              services for content, subscriptions, and notifications.
+            </li>
+            <li>
+              Integrated textbook and past-exam retrieval with AI tutors using
+              Qdrant and FastEmbed; use Typesense for content search across
+              <strong>1,824 curriculum topics</strong>.
+            </li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry-title">
+            <h3>Freelance &amp; Agency <span>| Software Engineer</span></h3>
+            <span class="date">2023-present</span>
+          </div>
+          <ul>
+            <li>
+              Delivered React Native features for Dymnd, including
+              timezone-sensitive habit tracking and fixes to authentication,
+              consent, keyboard behavior, and navigation.
+            </li>
+            <li>
+              Maintained backend services and deployment infrastructure for a US
+              bar-exam preparation platform using Node.js, AWS EC2, Nginx, and
+              TLS certificate automation.
+            </li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry-title">
+            <h3>Temaribet <span>| Founder</span></h3>
+            <span class="date">2019-2025</span>
+          </div>
+          <ul>
+            <li>
+              Founded and operated a tutoring marketplace; managed tutor
+              onboarding and family matching. Selected into Reach for Change and
+              Orbit Innovation Hub.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Selected technical work</h2>
+        <article class="entry compact">
+          <div class="entry-title">
+            <h3>
+              <a href="https://github.com/habasefa/react-native-ajora"
+                >react-native-ajora</a
+              >
+              <span>| Author &amp; Maintainer</span>
+            </h3>
+            <span class="date">2025-present</span>
+          </div>
+          <p>
+            Published a React Native library with AG-UI integration, streamed
+            messages, tool-call rendering, and client-side tools. The package is
+            used in PrepX.
+          </p>
+        </article>
+        <article class="entry compact">
+          <div class="entry-title">
+            <h3>
+              <a href="https://github.com/habasefa/myTorch">myTorch</a>
+              <span>| Learning Project</span>
+            </h3>
+            <span class="date">2026</span>
+          </div>
+          <p>
+            Implemented scalar reverse-mode autograd, MLP layers, SGD, and a
+            byte-level BPE tokenizer in Python; added tests for graph and
+            gradient behavior.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2>Technical skills</h2>
         <div class="skills">
-          <div class="skill"><div class="key">AI engineering</div><div class="val">LLM agents, RAG, tool calling, prompt engineering, evals, streaming AI UX, model routing (OpenRouter)</div></div>
-          <div class="skill"><div class="key">Search &amp; retrieval</div><div class="val">Qdrant (vector), Typesense (full-text), hybrid search, textbook &amp; curriculum indexing</div></div>
-          <div class="skill"><div class="key">Backend</div><div class="val">NestJS, FastAPI, Node.js, Express, REST APIs, auth, notification pipelines</div></div>
-          <div class="skill"><div class="key">Mobile</div><div class="val">React Native, Expo, EAS Build, offline-first architecture, SSE streaming interfaces</div></div>
-          <div class="skill"><div class="key">Agent tooling</div><div class="val">Agno, Mastra, AG-UI / CopilotKit patterns, server-side tool execution</div></div>
-          <div class="skill"><div class="key">Databases</div><div class="val">PostgreSQL, MongoDB, SQLite</div></div>
-          <div class="skill"><div class="key">DevOps</div><div class="val">AWS EC2, Debian Linux, Nginx, PM2, Certbot, SSL/DNS, production debugging</div></div>
-          <div class="skill"><div class="key">Languages</div><div class="val">TypeScript, JavaScript, Python, SQL</div></div>
+          <p><strong>Languages:</strong> Python, TypeScript, JavaScript, SQL</p>
+          <p>
+            <strong>ML:</strong> PyTorch, torchaudio, Hugging Face Transformers
+          </p>
+          <p>
+            <strong>Applications:</strong> React Native, Expo, FastAPI, NestJS
+          </p>
+          <p><strong>Data:</strong> PostgreSQL, SQLite, Qdrant, Typesense</p>
+          <p>
+            <strong>Infrastructure:</strong> Linux, Docker, Nginx, AWS EC2, S3,
+            GitHub Actions
+          </p>
         </div>
-      </div>
-
-      <!-- experience -->
-      <div class="section">
-        <div class="sec-head"><span class="hash">#</span> experience <span class="n">— git log --author=habtamu</span></div>
-
-        <div class="entry">
-          <div class="meta">
-            <div class="when">2024 — Present</div>
-            <div class="where">Addis Ababa, ET</div>
-            <div class="stack"><span>React Native</span><span>NestJS</span><span>FastAPI</span><span>Qdrant</span><span>Typesense</span><span>RAG</span><span>OpenRouter</span></div>
-          </div>
-          <div>
-            <p class="role-t">Founder &amp; Lead Engineer</p>
-            <div class="org">PrepX — AI-native learning platform</div>
-            <p class="desc">Textbook-grounded AI tutoring with offline-first mobile UX for Ethiopian high-school students.</p>
-            <ul>
-              <li>Built and shipped the full <b>React Native (Expo)</b> app and AI tutoring pipeline; grew to <b>2,600+ downloads and 93,060+ questions answered</b>, and launched Free, Go, and Pro subscriptions with referral and leaderboard rewards.</li>
-              <li>Designed a <b>hybrid RAG</b> system (<code>Qdrant</code> vector + <code>Typesense</code> full-text) for answers grounded in the curriculum, kept <b>model-agnostic</b> across Gemini, GPT, Claude, and open models via OpenRouter.</li>
-              <li>Modeled a <b>self-referential curriculum graph</b> across Grades 9–12 — <b>1,800+ topics and 220,000+ practice questions</b>, with notes, quizzes, leveled worksheets, flashcards, and past entrance exams.</li>
-              <li>Built backend services with NestJS, FastAPI, and PostgreSQL powering chat, retrieval, content workflows, notifications, and live competitions.</li>
-            </ul>
-          </div>
+      </section>
+      <section class="education">
+        <h2>Education</h2>
+        <div class="entry-title">
+          <h3>Addis Ababa University / AAiT</h3>
+          <span class="date">2024</span>
         </div>
-
-        <div class="entry">
-          <div class="meta">
-            <div class="when">2019 — 2025</div>
-            <div class="where">Addis Ababa, ET</div>
-            <div class="stack"><span>Marketplace</span><span>Operations</span><span>EdTech</span></div>
-          </div>
-          <div>
-            <p class="role-t">Founder</p>
-            <div class="org">Temaribet — tutoring marketplace</div>
-            <p class="desc">In-home tutoring marketplace connecting families with vetted college-student tutors.</p>
-            <ul>
-              <li>Built and operated a two-sided marketplace to <b>4,000+ tutors and 500+ families</b> (started as a freshman), owning onboarding, matching, operations, and product strategy.</li>
-              <li>Selected into <b>Reach for Change</b> and <b>Orbit Innovation Hub</b> accelerators (backed by the IKEA Foundation &amp; Mastercard Foundation); awarded grant funding and won a startup pitch competition.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="foot">
-      <span>habtamu asefa · resume</span>
-      <span>page 01 / 02</span>
-    </div>
-  </section>
-
-  <!-- ============================= PAGE 2 ============================= -->
-  <section class="page page--2" data-screen-label="Resume p.2">
-    <div class="page-body">
-
-      <div class="section" style="margin-top:0">
-        <div class="sec-head"><span class="hash">#</span> experience <span class="n">— continued</span></div>
-
-        <div class="entry">
-          <div class="meta">
-            <div class="when">2023 — Present</div>
-            <div class="where">Remote · US / EU</div>
-            <div class="stack"><span>React Native</span><span>Node.js</span><span>NestJS</span><span>MongoDB</span><span>AWS EC2</span><span>Nginx</span></div>
-          </div>
-          <div>
-            <p class="role-t">Full-Stack / Mobile Engineer</p>
-            <div class="org">Freelance &amp; Agency — US / EU clients</div>
-            <p class="desc">Production mobile and web applications for international startups and agency teams.</p>
-            <ul>
-              <li><b>Dymnd (Chicago startup):</b> shipped production React Native features used by <b>100+ users</b> over a multi-month paid engagement — rebuilt timezone-sensitive habit logic and fixed OTP, consent, keyboard, and navigation defects to improve reliability.</li>
-              <li>Maintained and upgraded a <b>US bar-exam prep platform</b> — backend/infra work (Node.js, AWS EC2, Nginx, Certbot) plus production bug fixes and stability improvements.</li>
-              <li>Owned delivery across both, start to finish: <code>EAS</code> builds, app-store releases, server deployment, and live production debugging.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- projects -->
-      <div class="section">
-        <div class="sec-head"><span class="hash">#</span> selected_projects <span class="n">— ls ./projects</span></div>
-
-        <div class="entry entry--sm">
-          <div class="meta">
-            <div class="when">2024 — Present</div>
-            <div class="stack"><span>React Native</span><span>SSE</span><span>Gemini</span><span>npm</span></div>
-          </div>
-          <div>
-            <p class="role-t">react-native-ajora — open-source AI agent UI for React Native</p>
-            <ul>
-              <li>Authored "the most complete AI agent UI for React Native" — <b>6,100+ npm downloads, 19 GitHub stars</b>. Ports AG-UI / CopilotKit agentic patterns to mobile: <code>SSE</code> streaming, tool calls, sources, threads, and server-side tool execution with Gemini.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="entry entry--sm">
-          <div class="meta">
-            <div class="when">Ongoing</div>
-            <div class="stack"><span>TypeScript</span><span>React Native</span><span>Python</span></div>
-          </div>
-          <div>
-            <p class="role-t">Open-source contributions</p>
-            <ul>
-              <li>Contributor to <b>Expensify's</b> production React Native app; <b>49 public repos</b> spanning AI, mobile, and backend.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="entry entry--sm">
-          <div class="meta">
-            <div class="when">2024</div>
-            <div class="stack"><span>Embedded</span><span>Sensors</span><span>Biomedical</span></div>
-          </div>
-          <div>
-            <p class="role-t">UlcerGuard — diabetic foot-ulcer prevention footwear</p>
-            <div class="org">AAU / AAiT thesis</div>
-            <ul>
-              <li>Built an embedded pressure-sensing footwear prototype detecting high-pressure foot regions to help prevent diabetic foot ulcers — biomedical analysis, sensors, and hardware prototyping.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- education + achievements -->
-      <div class="section">
-        <div class="twocol">
-          <div>
-            <div class="sec-head"><span class="hash">#</span> education</div>
-            <div class="edu">
-              <div class="deg">BSc, Biomedical Engineering</div>
-              <div class="school">Addis Ababa University / AAiT · 2024</div>
-              <div class="det">Thesis: <b>UlcerGuard</b> — pressure-sensing footwear for diabetic foot-ulcer prevention.</div>
-            </div>
-          </div>
-          <div>
-            <div class="sec-head"><span class="hash">#</span> achievements</div>
-            <ul class="ach">
-              <li>Scaled <b>Temaribet</b> to 4,000+ tutors &amp; 500+ families; selected into <b>Reach for Change</b> &amp; <b>Orbit Innovation Hub</b>.</li>
-              <li>Shipped <b>PrepX</b> to 2,600+ downloads and 93,060+ questions answered with a 3-person team.</li>
-              <li>Authored <b>react-native-ajora</b> — 6,100+ npm downloads, 19★.</li>
-              <li>Delivered production software for US/EU startups across mobile, backend &amp; infra.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="sec-head"><span class="hash">#</span> target_roles</div>
-        <div style="font-family:var(--font-mono); font-size:11.5px; color:var(--fg-2); line-height:1.6;">
-          <span class="prompt">❯</span> AI Research Engineer · Speech &amp; Multimodal AI · Inference · Fine-tuning · Model Deployment
-        </div>
-      </div>
-
-    </div>
-
-    <div class="foot">
-      <span>github.com/habasefa · npm/react-native-ajora</span>
-      <span>page 02 / 02</span>
-    </div>
-  </section>
-
-</div>
-
-<script>
-  const root = document.documentElement;
-  const tBtn = document.getElementById('themeBtn');
-  const tLabel = document.getElementById('themeLabel');
-  const saved = localStorage.getItem('resume-theme');
-  if (saved) root.setAttribute('data-theme', saved);
-  function syncLabel(){
-    const dark = root.getAttribute('data-theme') !== 'light';
-    tLabel.textContent = dark ? 'Light mode' : 'Dark mode';
-  }
-  syncLabel();
-  tBtn.addEventListener('click', () => {
-    const dark = root.getAttribute('data-theme') !== 'light';
-    const next = dark ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    localStorage.setItem('resume-theme', next);
-    syncLabel();
-  });
-  document.getElementById('printBtn').addEventListener('click', () => window.print());
-</script>
-</body>
+        <p>
+          BSc in Biomedical Engineering. Thesis: UlcerGuard, pressure-sensing
+          footwear for diabetic foot-ulcer prevention.
+        </p>
+      </section>
+      <p class="updated">PrepX metrics: October 5, 2026.</p>
+    </main>
+    <script>
+      document
+        .getElementById("printBtn")
+        .addEventListener("click", function () {
+          window.print();
+        });
+    </script>
+  </body>
 </html>

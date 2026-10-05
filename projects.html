@@ -1,258 +1,291 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Projects — Habtamu Asefa</title>
-<meta name="description" content="Selected work by Habtamu Asefa — PrepX (AI-native learning platform), Liqawnt (low-resource speech research), react-native-ajora (open-source agent UI), and a biomedical hardware thesis." />
-<link rel="icon" type="image/png" href="favicon.png" />
-<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-<link rel="stylesheet" href="theme.css" />
-<link rel="stylesheet" href="site.css" />
-<link rel="stylesheet" href="projects.css" />
-</head>
-<body>
-<div class="wrap">
-
-  <!-- ====================== NAV ====================== -->
-  <nav class="nav">
-    <div class="nav-in">
-      <a class="brand" href="index.html"><span class="sq"></span> habtamu.asefa <span class="path">~/projects</span></a>
-      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Menu">≡</button>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html#about"><span class="h">#</span> about</a>
-        <a href="index.html#skills"><span class="h">#</span> skills</a>
-        <a href="index.html#experience"><span class="h">#</span> experience</a>
-        <a href="projects.html" class="active"><span class="h">#</span> projects</a>
-        <a href="index.html#contact"><span class="h">#</span> contact</a>
-        <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-        <a class="btn-resume" href="Resume.html">⤓ Résumé</a>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <!-- ====================== HERO ====================== -->
-    <header class="proj-hero">
-      <div class="crumb"><a href="index.html">~/</a><span class="sep">/</span><span class="here">projects</span></div>
-      <h1>Selected work<span class="u">_</span></h1>
-      <p class="sub">A closer look at what I've built — an AI learning platform, low-resource speech research, an open-source agent-UI library, and a biomedical hardware thesis. The honest version: what the problem was, what I built, and what it runs on.</p>
-
-      <div class="case-index">
-        <a href="#prepx"><span class="n">01</span> PrepX</a>
-        <a href="#ajora"><span class="n">02</span> react-native-ajora</a>
-        <a href="#ulcerguard"><span class="n">03</span> UlcerGuard</a>
-        <a href="#liqawnt"><span class="n">04</span> Liqawnt</a>
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Habtamu Asefa</title>
+    <meta
+      name="description"
+      content="Technical details of PrepX, Amharic TTS work at Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
+    />
+    <meta property="og:title" content="Projects | Habtamu Asefa" />
+    <meta
+      property="og:description"
+      content="Technical details of PrepX, Amharic TTS work at Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://habasefa.github.io/portfolio/avatar.jpg"
+    />
+    <link rel="icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="site.css?v=20261005-2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Habtamu Asefa</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html#work">Work</a
+          ><a href="index.html#experience">Experience</a
+          ><a href="index.html#skills">Skills</a
+          ><a href="index.html#contact">Contact</a
+          ><button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Switch to dark theme"
+          >
+            Dark</button
+          ><a class="nav-resume" href="Habtamu_Asefa_Resume.pdf"
+            >Résumé <span aria-hidden="true">↗</span></a
+          >
+        </nav>
       </div>
     </header>
-
-    <div class="cases">
-
-      <!-- ============ 01 · PREPX ============ -->
-      <article class="case flagship" id="prepx">
-        <div class="case-file">
-          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
-          <span class="path"><b>prepx</b>/README.md</span>
-          <span class="status status--shipped">Shipped</span>
-        </div>
-        <div class="case-body">
-          <aside class="case-meta">
-            <div class="row"><div class="label">Year</div><div class="val mono">2024 — Present</div></div>
-            <div class="row"><div class="label">Role</div><div class="val">Founder &amp; Lead Engineer</div></div>
-            <div class="row full"><div class="label">Stack</div>
-              <div class="stk">
-                <span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">NestJS</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Qdrant</span><span class="chip">Typesense</span><span class="chip">OpenRouter</span><span class="chip">Agno</span><span class="chip">Mastra</span><span class="chip">RAG</span>
-              </div>
-            </div>
-            <div class="row full"><div class="label">Links</div>
-              <div class="case-links">
-                <a href="https://prepx.temaribet.io/"><span class="g">◆</span> Website &amp; live stats</a>
-                <a href="https://play.google.com/store/apps/details?id=com.temaribet.prepx"><span class="g">▶</span> Google Play</a>
-              </div>
-            </div>
-          </aside>
-          <div class="case-main">
+    <main id="main" class="container">
+      <header class="page-intro">
+        <p class="eyebrow">Selected work</p>
+        <h1>Projects</h1>
+        <p>Implementation, scope, and current status.</p>
+        <nav class="project-index" aria-label="Projects">
+          <a href="#prepx">PrepX</a><a href="#liqawnt">Liqawnt</a
+          ><a href="#ajora">Ajora</a><a href="#mytorch">myTorch</a
+          ><a href="#ulcerguard">UlcerGuard</a>
+        </nav>
+      </header>
+      <article class="case" id="prepx">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">Founder and Lead Engineer · 2024–present</p>
             <h2>PrepX</h2>
-            <p class="tagline">AI learning platform · Ethiopian high-school curriculum</p>
-            <p class="lede">An <b>AI study app</b> for Ethiopian high-school students — curriculum-grounded AI tutoring, hybrid retrieval over the full national curriculum, offline-first mobile UX, and live learning. Built and shipped with a 3-person team; I owned the full mobile app, the AI pipeline, and the content data model.</p>
-
-            <div class="case-metrics">
-              <div class="case-metric"><div class="num">2,600+</div><div class="lbl">downloads</div></div>
-              <div class="case-metric"><div class="num">93,060+</div><div class="lbl">questions answered · Oct 5, 2026</div></div>
-              <div class="case-metric"><div class="num">1,800+</div><div class="lbl">curriculum topics</div></div>
-            </div>
-
-            <div class="case-h"><span class="h">#</span> the problem <span class="line"></span></div>
-            <p>Students need affordable, curriculum-aligned help that works on the devices and connections they actually have. Generic AI chat isn't grounded in their textbooks, and unreliable connectivity makes always-online study tools impractical.</p>
-
-            <div class="case-h"><span class="h">#</span> what i built <span class="line"></span></div>
-            <ul class="case-list">
-              <li>The full <b>React Native (Expo)</b> app — study flows, AI chat UX, offline topic access, recent activity, notifications, and live competition features. Grew it to <b>2,600+ downloads and 93,060+ questions answered</b> and launched Free, Go, and Pro subscriptions, including referral access and leaderboard rewards.</li>
-              <li>A <b>hybrid RAG</b> pipeline for textbook-grounded tutoring — <code>vector search</code> (Qdrant) + <code>full-text search</code> (Typesense) — kept <b>model-agnostic</b> across Gemini, GPT, Claude, and open models via OpenRouter so answers stay anchored to real curriculum.</li>
-              <li>A <b>self-referential curriculum graph</b> spanning Grades 9–12 — <b>1,800+ topics and 220,000+ practice questions</b>, with hierarchical chapters, topics, notes, and references.</li>
-              <li><b>Chapter Essentials</b> for condensed revision; chapter downloads for offline study; student groups, live challenges, and multi-grade leaderboards.</li>
-              <li>Backend services with NestJS, FastAPI, and PostgreSQL — powering chat, retrieval, content workflows, notifications, and live competitions, with Agno and Mastra for agent orchestration.</li>
-            </ul>
           </div>
+          <span class="status">In use</span>
+        </div>
+        <p class="case-lead">
+          A study app built around the Ethiopian Grade 9–12 curriculum.
+        </p>
+        <p>
+          Students read notes, practise questions, revise chapter Essentials,
+          and work through past entrance papers. AI tutors receive the current
+          note or question as context and retrieve material from the textbook
+          and exam corpora. Chapters can be downloaded for offline study.
+        </p>
+        <dl class="metrics">
+          <div>
+            <dt>2,600+</dt>
+            <dd>downloads</dd>
+          </div>
+          <div>
+            <dt>93,173+</dt>
+            <dd>questions answered</dd>
+          </div>
+          <div>
+            <dt>1,824</dt>
+            <dd>topics</dd>
+          </div>
+        </dl>
+        <p class="metric-source">
+          October 5, 2026. Downloads are separate from registered students;
+          questions answered measure student activity.
+        </p>
+        <h3>Engineering work</h3>
+        <ul class="work-list">
+          <li>
+            <strong>Mobile:</strong> React Native and Expo, local SQLite
+            storage, content downloads, streamed AI chat, notifications, and
+            Socket.IO competition flows.
+          </li>
+          <li>
+            <strong>Backend:</strong> FastAPI, SQLAlchemy, and PostgreSQL for
+            the product API; NestJS and Mastra for AI orchestration and tools.
+          </li>
+          <li>
+            <strong>Retrieval:</strong> FastEmbed and Qdrant for semantic search
+            over textbooks and past exams; Typesense for content search.
+          </li>
+          <li>
+            <strong>Product systems:</strong> Free, Go, and Pro subscriptions,
+            referral rewards, leaderboards, student groups, and scheduled
+            challenges.
+          </li>
+        </ul>
+        <p class="project-stack">
+          React Native · Expo · FastAPI · NestJS · PostgreSQL · SQLite · Qdrant
+          · Typesense · Mastra
+        </p>
+        <div class="project-links">
+          <a href="https://prepx.temaribet.io/"
+            >Product website <span aria-hidden="true">↗</span></a
+          ><a
+            href="https://play.google.com/store/apps/details?id=com.temaribet.prepx"
+            >Google Play <span aria-hidden="true">↗</span></a
+          >
         </div>
       </article>
-
-      <!-- ============ 02 · REACT-NATIVE-AJORA ============ -->
-      <article class="case" id="ajora">
-        <div class="case-file">
-          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
-          <span class="path"><b>react-native-ajora</b>/README.md</span>
-          <span class="status status--shipped">Open source</span>
-        </div>
-        <div class="case-body">
-          <aside class="case-meta">
-            <div class="row"><div class="label">Year</div><div class="val mono">2024 — Present</div></div>
-            <div class="row"><div class="label">Role</div><div class="val">Author &amp; maintainer</div></div>
-            <div class="row full"><div class="label">Stack</div>
-              <div class="stk">
-                <span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">SSE</span><span class="chip">Gemini</span><span class="chip">Tool calling</span>
-              </div>
-            </div>
-            <div class="row full"><div class="label">Links</div>
-              <div class="case-links">
-                <a href="https://www.npmjs.com/package/react-native-ajora"><span class="g">↯</span> npm</a>
-                <a href="https://github.com/habasefa/react-native-ajora"><span class="g">⎇</span> github · ★19</a>
-              </div>
-            </div>
-          </aside>
-          <div class="case-main">
-            <h2>react-native-ajora — agent UI for React Native</h2>
-            <p class="tagline">AG-UI / CopilotKit patterns, brought to mobile</p>
-            <p class="lede">An open-source library billed as <b>"the most complete AI agent UI for React Native."</b> It ports AG-UI / CopilotKit-style agentic interfaces to mobile — the streaming, tool-oriented assistant UX that web has, rebuilt as native-feeling React Native. <b>6,100+ npm downloads, 19 GitHub stars.</b></p>
-
-            <div class="case-metrics">
-              <div class="case-metric"><div class="num">6,100+</div><div class="lbl">npm downloads</div></div>
-              <div class="case-metric"><div class="num">19★</div><div class="lbl">GitHub stars</div></div>
-              <div class="case-metric"><div class="num">586</div><div class="lbl">peak downloads / day</div></div>
-            </div>
-
-            <div class="case-h"><span class="h">#</span> the problem <span class="line"></span></div>
-            <p>Most agentic UI tooling is web-first. Mobile apps that want streaming AI, tool-oriented interactions, threads, and rich assistant UX have to reinvent those patterns by hand — there's no clean, native-feeling equivalent.</p>
-
-            <div class="case-h"><span class="h">#</span> what i built <span class="line"></span></div>
-            <ul class="case-list">
-              <li>An <code>SSE</code>-based <b>streaming message UI</b> for React Native — assistant messages, tool responses, sources, suggestions, thread titles, regeneration, errors, and completion events as first-class concepts.</li>
-              <li>Thread and message <b>state handling</b> for active conversations: pagination, regeneration, streaming state, and history.</li>
-              <li>Backend orchestration for threads, messages, title updates, regeneration, and agent streaming — with <b>Gemini streaming</b> and server-side tool-execution patterns.</li>
-              <li>Published and maintained on <b>npm</b> as a reusable library — adopted to <b>6,100+ downloads</b> with a 586-download peak day.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- ============ 03 · ULCERGUARD ============ -->
-      <article class="case" id="ulcerguard">
-        <div class="case-file">
-          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
-          <span class="path"><b>ulcerguard</b>/THESIS.md</span>
-          <span class="status status--thesis">Thesis</span>
-        </div>
-        <div class="case-body">
-          <aside class="case-meta">
-            <div class="row"><div class="label">Year</div><div class="val mono">2024</div></div>
-            <div class="row"><div class="label">Context</div><div class="val">AAU / AAiT thesis</div></div>
-            <div class="row full"><div class="label">Domain</div>
-              <div class="stk">
-                <span class="chip">Embedded</span><span class="chip">Pressure sensors</span><span class="chip">Hardware</span><span class="chip">Biomedical</span>
-              </div>
-            </div>
-            <div class="row full"><div class="label">Links</div>
-              <div class="case-links">
-                <span class="muted">Academic project — no public repo</span>
-              </div>
-            </div>
-          </aside>
-          <div class="case-main">
-            <h2>UlcerGuard — diabetic foot-ulcer prevention footwear</h2>
-            <p class="tagline">Biomedical engineering thesis · hardware prototype</p>
-            <p class="lede">A <b>pressure-sensing footwear prototype</b> designed to help prevent diabetic foot ulcers by detecting high-pressure regions in diabetic patients' feet before they become wounds.</p>
-
-            <div class="case-h"><span class="h">#</span> the problem <span class="line"></span></div>
-            <p>Diabetic foot ulcers often start from sustained pressure that patients can't feel due to reduced sensation. Catching those high-pressure regions early is a preventative-health problem as much as a hardware one.</p>
-
-            <div class="case-h"><span class="h">#</span> what i built <span class="line"></span></div>
-            <ul class="case-list">
-              <li>Designed a pressure-sensing footwear prototype that <b>detects high-pressure regions</b> across the foot to flag ulcer risk early.</li>
-              <li>Combined <b>biomedical problem analysis</b>, embedded pressure sensors, hardware prototyping, and preventative health monitoring into a single working device.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
       <article class="case" id="liqawnt">
-        <div class="case-file">
-          <span class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></span>
-          <span class="path"><b>liqawnt</b>/RESEARCH.md</span>
-          <span class="status">In progress</span>
-        </div>
-        <div class="case-body">
-          <aside class="case-meta">
-            <div class="row"><div class="label">Year</div><div class="val mono">2026 — Present</div></div>
-            <div class="row"><div class="label">Focus</div><div class="val">AI research &amp; engineering</div></div>
-            <div class="row full"><div class="label">Direction</div><div class="stk"><span class="chip">TTS</span><span class="chip">ASR</span><span class="chip">Speech-to-speech</span><span class="chip">Multimodal AI</span></div></div>
-          </aside>
-          <div class="case-main">
-            <h2>Liqawnt — low-resource speech models</h2>
-            <p class="tagline">Speech AI for Amharic, Afaan Oromo, and Tigrinya</p>
-            <p class="lede">Working toward speech models that make AI useful in languages underserved by current systems. The long-term direction is <b>speech-interactive models</b> that understand, reason, and respond through speech.</p>
-            <div class="case-h"><span class="h">#</span> research direction <span class="line"></span></div>
-            <ul class="case-list">
-              <li>Text-to-speech, automatic speech recognition, and speech-to-speech language models.</li>
-              <li>Audio representation learning and speech generation, with an interest in multimodal interaction.</li>
-              <li>Practical training, fine-tuning, inference, and deployment under limited compute.</li>
-            </ul>
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">AI research and engineering · 2026–present</p>
+            <h2>Liqawnt</h2>
           </div>
+          <span class="status">In development</span>
+        </div>
+        <p class="case-lead">
+          Amharic text-to-speech adaptation, from corpus preparation to
+          evaluation.
+        </p>
+        <p>
+          Current work uses a pretrained VITS checkpoint as a baseline. The
+          pipeline includes Amharic text normalization and romanization, audio
+          conditioning, dataset preparation, fine-tuning, synthesis, and
+          evaluation.
+        </p>
+        <h3>Implemented work</h3>
+        <ul class="work-list">
+          <li>
+            Text preprocessing for Ge’ez script, numeral expansion, and
+            homophone normalization, shared between training and inference.
+          </li>
+          <li>
+            Audio resampling, silence trimming, loudness normalization, and
+            quality checks before writing dataset manifests.
+          </li>
+          <li>
+            A PyTorch training path for the text encoder, flow, and duration
+            predictor, with monotonic alignment search. The posterior encoder
+            and waveform decoder remain frozen.
+          </li>
+          <li>
+            Evaluation code for spectral distortion, pitch, voicing, and
+            duration. Results depend on the reference speaker and are
+            interpreted alongside listening tests.
+          </li>
+        </ul>
+        <p class="case-note">
+          This is a TTS prototype. ASR and speech-to-speech are research
+          directions; they are not presented as completed systems. Freezing the
+          decoder limits voice adaptation.
+        </p>
+        <p class="project-stack">
+          Python · PyTorch · torchaudio · Transformers · NumPy · librosa
+        </p>
+      </article>
+      <article class="case" id="ajora">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">Author and maintainer · 2025–present</p>
+            <h2>react-native-ajora</h2>
+          </div>
+          <span class="status">Open source</span>
+        </div>
+        <p class="case-lead">
+          Reusable AI chat components and agent interfaces for React Native.
+        </p>
+        <p>
+          The library adapts CopilotKit-style agent interfaces to mobile
+          applications. It provides AG-UI integration, streamed messages,
+          conversation state, tool-call rendering, and hooks for app context and
+          client-side tools. PrepX depends on the published package.
+        </p>
+        <ul class="work-list">
+          <li>
+            Chat components with keyboard handling, attachments, suggestions,
+            and customizable renderers.
+          </li>
+          <li>
+            Hooks for agent context, frontend tools, and human-in-the-loop
+            interactions.
+          </li>
+          <li>Examples for Expo applications and backend integration.</li>
+        </ul>
+        <p class="project-stack">
+          TypeScript · React Native · AG-UI · Server-Sent Events
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/habasefa/react-native-ajora"
+            >Source code <span aria-hidden="true">↗</span></a
+          ><a href="https://www.npmjs.com/package/react-native-ajora"
+            >npm package <span aria-hidden="true">↗</span></a
+          >
         </div>
       </article>
-    </div>
-
-    <!-- ====================== CTA ====================== -->
-    <div class="proj-cta">
-      <p>// that's the work — let's talk about what's next</p>
-      <div class="row">
-        <a class="cta cta-primary" href="index.html#contact">Get in touch →</a>
-        <a class="cta cta-ghost" href="Resume.html">⤓ Download résumé</a>
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="foot">
-    <div class="container">
-      <div class="foot-in">
-        <span>© 2026 Habtamu Asefa — Addis Ababa, Ethiopia</span>
-        <span><a href="index.html">← back home</a> · <a href="Resume.html">résumé</a></span>
-      </div>
-    </div>
-  </footer>
-
-</div>
-
-<script>
-  // minimal: theme + mobile nav (no terminal here)
-  (function () {
-    var root = document.documentElement;
-    var saved = localStorage.getItem('habtamu-theme');
-    if (saved) root.setAttribute('data-theme', saved);
-    var tg = document.getElementById('themeToggle');
-    if (tg) tg.addEventListener('click', function () {
-      var dark = root.getAttribute('data-theme') !== 'light';
-      var next = dark ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('habtamu-theme', next);
-    });
-    var nt = document.getElementById('navToggle'), nl = document.getElementById('navLinks');
-    if (nt && nl) {
-      nt.addEventListener('click', function () { nl.classList.toggle('open'); });
-      nl.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { nl.classList.remove('open'); }); });
-    }
-  })();
-</script>
-</body>
+      <article class="case" id="mytorch">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">Learning project · 2026</p>
+            <h2>myTorch</h2>
+          </div>
+          <span class="status">Open source</span>
+        </div>
+        <p class="case-lead">
+          A small implementation of neural-network fundamentals in Python.
+        </p>
+        <p>
+          A micrograd-style scalar autograd engine records a computation graph
+          and propagates gradients in reverse topological order. Neuron, layer,
+          and MLP classes use the engine; an SGD optimizer updates parameters.
+        </p>
+        <ul class="work-list">
+          <li>
+            Arithmetic operators and ReLU with accumulated gradients, including
+            reused operands and multiple paths through the graph.
+          </li>
+          <li>
+            Unit tests for forward operations, graph structure, and backward
+            propagation.
+          </li>
+          <li>
+            A byte-level BPE tokenizer with pair-frequency training, ordered
+            merge replay, encoding, and decoding.
+          </li>
+        </ul>
+        <p class="case-note">
+          An educational implementation, not a tensor framework or a replacement
+          for PyTorch.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/habasefa/myTorch"
+            >Source code <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </article>
+      <article class="case" id="ulcerguard">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">
+              Biomedical engineering thesis · Addis Ababa University · 2024
+            </p>
+            <h2>UlcerGuard</h2>
+          </div>
+          <span class="status">Prototype</span>
+        </div>
+        <p class="case-lead">
+          Pressure-sensing footwear for identifying foot-ulcer risk.
+        </p>
+        <p>
+          A footwear prototype that detects high-pressure regions in the foot,
+          developed as a biomedical engineering thesis. The project combines
+          pressure sensing with a React Native companion application.
+        </p>
+        <p class="case-note">
+          Developed as an undergraduate engineering prototype.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/habasefa/UlcerGuard"
+            >Mobile source code <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer container">
+      <span>Habtamu Asefa · Addis Ababa, Ethiopia</span
+      ><span
+        ><a href="Resume.html">Résumé</a> ·
+        <a href="https://github.com/habasefa">GitHub</a></span
+      >
+    </footer>
+    <script src="app.js?v=20261005-2" defer></script>
+  </body>
 </html>

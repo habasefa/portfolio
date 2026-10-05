@@ -1,67 +1,44 @@
-# Habtamu Asefa — Portfolio + Résumé
+# Habtamu Asefa - portfolio and resume
 
-Personal portfolio site and a matching two-page résumé for **Habtamu Asefa — AI Research Engineer**.
-Developer-terminal / IDE aesthetic (deep slate, burnt-orange accent). Static HTML/CSS/JS — no build step, no framework.
+Static HTML, CSS, and JavaScript. Published at https://habasefa.github.io/portfolio/.
 
-All **content** is the real, verified material from the candidate interview (PrepX, Temaribet, react-native-ajora,
-client work). The **design** comes from the Claude Design handoff in `Resume/` (kept locally as reference, gitignored).
+## Files
 
-## Files (the deployable site)
-| File | Role |
-|---|---|
-| `index.html` | Portfolio single page (hero terminal, about, skills, experience, projects, contact) |
-| `projects.html` | Case studies — PrepX, react-native-ajora, UlcerGuard, Liqawnt |
-| `Resume.html` | Two-page A4 résumé (dark/light toggle + Save-PDF button) |
-| `theme.css` | Design tokens (colors, type, spacing) — source of truth |
-| `site.css` / `projects.css` / `resume.css` | Component + résumé styles |
-| `app.js` | Portfolio interactivity (hero terminal, scroll-reveal, nav spy, theme) |
-| `vercel.json` | Clean URLs + security headers for static deploy |
-| `Habtamu_Asefa_Resume.pdf` | Pre-generated 2-page résumé PDF (light theme) for emailing |
-| `avatar.jpg` | Web-optimized 720×720 head-shot used on the homepage, favicon, and social preview |
-| `resume-profile-photo.jpg` | Original full-res photo (source for re-cropping `avatar.jpg`) |
+- `index.html`: professional profile, selected work, experience, skills, and contact.
+- `projects.html`: implementation details and status for PrepX, Liqawnt, Ajora, myTorch, and UlcerGuard.
+- `Resume.html`: single-column resume; screen and print share the same content.
+- `Habtamu_Asefa_Resume.pdf`: generated A4 resume, with selectable text and links.
+- `site.css`, `resume.css`: website and resume styles.
+- `app.js`: accessible light/dark theme control.
+- `.nojekyll`: disables Jekyll processing for the static Pages site.
 
-### Swap the photo
-Replace `resume-profile-photo.jpg`, then regenerate the square avatar:
-```bash
-convert resume-profile-photo.jpg -auto-orient -resize 720x720^ -gravity north -extent 720x720 -strip -quality 84 avatar.jpg
-```
-The photo appears **only on the website** (About section), never on the résumé PDF — US/EU tech résumés
-conventionally omit photos for ATS + hiring-bias reasons.
+Run locally with `python3 -m http.server 8080` from the repository root. No build step or package installation is required.
 
-## Run locally
-```bash
-python3 -m http.server 8080
-# open http://localhost:8080/
-```
+## Content sources - October 5, 2026
 
-## Deploy (when ready)
-Any static host works. Easiest is Vercel or Netlify (drag-and-drop the folder), or GitHub Pages:
-```bash
-# Vercel
-npx vercel --prod
-# or GitHub Pages: push to a repo, enable Pages on the default branch (root)
-```
-Then point a custom domain at it and update the links if needed.
+- Downloads: 2,600+, provided by Habtamu. Downloads are not interchangeable with registered students.
+- Questions answered: 93,173; curriculum topics: 1,824. Retrieved from `https://api.prepx.temaribet.io/public/stats` on October 5, 2026.
+- Production stack: inspected manifests and relevant source files in PrepX mobile, API, AI, and vector-search repositories.
+- Speech work: inspected Liqawnt's TTS data, training, synthesis, and evaluation code. ASR and speech-to-speech are described as research directions.
+- Ajora: package dependencies, README, and its use in PrepX. npm first publication: September 20, 2025. Public repository: https://github.com/habasefa/react-native-ajora.
+- myTorch: implementation files for scalar autograd, MLPs, SGD, BPE, and gradient tests. README lags behind the code. Public repository: https://github.com/habasefa/myTorch.
+- UlcerGuard: prior thesis history and the public React Native repository at https://github.com/habasefa/UlcerGuard.
+- Earlier employment dates and client responsibilities: retained from the existing resume and prior user-provided history; repository creation dates are not treated as employment start dates.
 
-## Regenerate the résumé PDF
-The résumé page has a **Save PDF** button — open `Resume.html`, click **Light mode**, then **Save PDF**.
-To regenerate headlessly (light theme, 2-page A4):
-```bash
-sed 's/data-theme="dark"/data-theme="light"/' Resume.html > _resume_print.html
-python3 -m http.server 8080 &
-google-chrome --headless=new --no-pdf-header-footer \
-  --print-to-pdf=Habtamu_Asefa_Resume.pdf "http://localhost:8080/_resume_print.html"
-rm _resume_print.html
-```
+Do not add proficiency or contribution claims merely because a repository was forked. Do not turn a planned feature, dependency, or benchmark described in a README into a completed or independently verified result.
 
-## Notes / open items
-- Published at https://habasefa.github.io/portfolio/. PrepX links to https://prepx.temaribet.io/ and Google Play.
-- For large job boards that prefer a single-column scanner-safe résumé, the PDF here parses cleanly as text;
-  a plain one-column variant can be added if a specific ATS rejects it.
+## Resume references
 
-## Content refresh — October 5, 2026
+The content and structure follow MIT's guidance on specific accomplishment statements, conservative formatting, and readable technical skills:
 
-- PrepX downloads: 2,600+ (provided by Habtamu).
-- Questions answered: 93,060; topics: 1,824, from `https://api.prepx.temaribet.io/public/stats`, fetched October 5, 2026. The portfolio uses 1,800+ topics.
-- Questions answered measure student activity; 220,000+ practice questions describe the content library. Downloads are distinct from registered students.
-- Liqawnt is presented as ongoing low-resource speech research, without claims of released models or benchmark results.
+- https://capd.mit.edu/resources/resumes/
+- https://capd.mit.edu/resources/resumes-writing-about-your-skills/
+- https://capd.mit.edu/resources/make-your-resume-ats-friendly/
+
+## PDF regeneration
+
+Use Chromium to print `Resume.html` as A4 with CSS page size, zero browser margins, and browser headers/footers disabled. After regeneration, inspect the rendered page and extracted text. Confirm it fits a single page without shrinking the 10.5-point body text.
+
+## Publishing verification
+
+After committing to `main`, inspect the Pages workflow and verify the public HTML. A successful commit is not proof of a completed deployment.
