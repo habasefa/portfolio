@@ -1,0 +1,36 @@
+name: Deploy static portfolio
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: static-portfolio-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out portfolio
+        uses: actions/checkout@v4
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          cp *.html *.css *.js *.jpg *.png *.pdf .nojekyll _site/
+          test -s _site/index.html
+          test -s _site/Resume.html
+          test -s _site/Habtamu_Asefa_Resume.pdf
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
