@@ -6,12 +6,12 @@
     <title>Projects | Habtamu Asefa</title>
     <meta
       name="description"
-      content="Technical details of PrepX, Amharic TTS work at Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
+      content="Technical details of PrepX study agents, Socratic Loop, Poetic Keyboard, Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
     />
     <meta property="og:title" content="Projects | Habtamu Asefa" />
     <meta
       property="og:description"
-      content="Technical details of PrepX, Amharic TTS work at Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
+      content="Technical details of PrepX study agents, Socratic Loop, Poetic Keyboard, Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -50,7 +50,8 @@
         <h1>Projects</h1>
         <p>Implementation, scope, and current status.</p>
         <nav class="project-index" aria-label="Projects">
-          <a href="#prepx">PrepX</a><a href="#liqawnt">Liqawnt</a
+          <a href="#prepx">PrepX</a><a href="#socratic-loop">Socratic Loop</a
+          ><a href="#poetic-keyboard">Poetic Keyboard</a><a href="#liqawnt">Liqawnt</a
           ><a href="#ajora">Ajora</a><a href="#mytorch">myTorch</a
           ><a href="#ulcerguard">UlcerGuard</a>
         </nav>
@@ -58,7 +59,7 @@
       <article class="case" id="prepx">
         <div class="case-heading">
           <div>
-            <p class="eyebrow">Founder and Lead Engineer · 2024–present</p>
+            <p class="eyebrow">CTO · 2024–present</p>
             <h2>PrepX</h2>
           </div>
           <span class="status">In use</span>
@@ -111,6 +112,27 @@
             challenges.
           </li>
         </ul>
+        <h3>Personalized study agent</h3>
+        <p>
+          Built Magnus’s study counselor as a generative recommendation system.
+          It uses a student’s profile and study performance—subject accuracy,
+          weakest topics, and streaks—to help decide what to study next and
+          turn that advice into a concrete schedule.
+        </p>
+        <ul class="work-list">
+          <li>
+            Student profile and performance tools give the agent context for
+            recommendations based on the student’s progress.
+          </li>
+          <li>
+            Study-plan tools create, read, update, and reschedule sessions with
+            specific topics after the student confirms the plan.
+          </li>
+          <li>
+            Profile access and plan writes are feature-gated; the counselor can
+            also advise from the conversation when those tools are disabled.
+          </li>
+        </ul>
         <p class="project-stack">
           React Native · Expo · FastAPI · NestJS · PostgreSQL · SQLite · Qdrant
           · Typesense · Mastra
@@ -123,6 +145,69 @@
             >Google Play <span aria-hidden="true">↗</span></a
           >
         </div>
+      </article>
+      <article class="case" id="socratic-loop">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">AI research workspace</p>
+            <h2>Socratic Loop</h2>
+          </div>
+          <span class="status">In development</span>
+        </div>
+        <p class="case-lead">
+          Read papers, build notes, and develop writing with an AI research collaborator.
+        </p>
+        <p>
+          A desktop study and research environment that brings a PDF reader,
+          Markdown notes, a writing editor, and an agent panel into one
+          workspace. The agent works with the papers and notes at hand to
+          explain ideas, discover related work, and support background research.
+        </p>
+        <h3>Engineering work</h3>
+        <ul class="work-list">
+          <li><strong>Reading and writing:</strong> PDF text selection and
+            annotations alongside Tiptap editing, Markdown storage, and inline AI.</li>
+          <li><strong>Research tools:</strong> Workspace and library search,
+            PDF passage retrieval, multi-paper comparison, related-paper
+            discovery, and citation metadata.</li>
+          <li><strong>Agent collaboration:</strong> Streamed responses and tool
+            events, cancellable runs, and proposed note edits for review.</li>
+          <li><strong>Study loop:</strong> Flashcards and spaced-repetition
+            scheduling, with local workspace persistence.</li>
+        </ul>
+        <p class="project-stack">
+          TypeScript · Electron · React · Tiptap · PDF.js · SQLite · Vercel AI SDK
+        </p>
+      </article>
+      <article class="case" id="poetic-keyboard">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">Android AI keyboard</p>
+            <h2>Poetic Keyboard</h2>
+          </div>
+          <span class="status">In development</span>
+        </div>
+        <p class="case-lead">
+          Fix, rewrite, and polish replies directly from the keyboard.
+        </p>
+        <p>
+          A native Android input method with AI writing tools built into the
+          typing flow. It transforms the user’s draft while preserving its
+          meaning, with actions for grammar, tone, translation, and continuation.
+        </p>
+        <h3>Engineering work</h3>
+        <ul class="work-list">
+          <li><strong>Native keyboard:</strong> Android IME integration and
+            access to the current text field for in-place writing assistance.</li>
+          <li><strong>Writing tools:</strong> Grammar correction, professional
+            and conversational rewrites, concise phrasing, translation, and
+            continuation in the user’s voice.</li>
+          <li><strong>Streaming:</strong> Kotlin coroutine flows and OkHttp
+            server-sent events deliver incremental output from the AI backend.</li>
+          <li><strong>Customization:</strong> Configurable toolbar actions and
+            prompt generation for user-defined transformations.</li>
+        </ul>
+        <p class="project-stack">Kotlin · Android IME · Coroutines · OkHttp · Server-sent events</p>
       </article>
       <article class="case" id="liqawnt">
         <div class="case-heading">

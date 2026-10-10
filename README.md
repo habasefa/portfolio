@@ -5,7 +5,7 @@ Static HTML, CSS, and JavaScript. Published at https://habasefa.github.io/portfo
 ## Files
 
 - `index.html`: professional profile, selected work, experience, skills, and contact.
-- `projects.html`: implementation details and status for PrepX, Liqawnt, Ajora, myTorch, and UlcerGuard.
+- `projects.html`: implementation details and status for PrepX, Socratic Loop, Poetic Keyboard, Liqawnt, Ajora, myTorch, and UlcerGuard.
 - `Resume.html`: single-column resume; screen and print share the same content.
 - `Habtamu_Asefa_Resume.pdf`: generated A4 resume, with selectable text and links.
 - `site.css`, `resume.css`: website and resume styles.
@@ -26,6 +26,13 @@ Run locally with `python3 -m http.server 8080` from the repository root. No buil
 - Earlier employment dates and client responsibilities: retained from the existing resume and prior user-provided history; repository creation dates are not treated as employment start dates.
 
 Do not add proficiency or contribution claims merely because a repository was forked. Do not turn a planned feature, dependency, or benchmark described in a README into a completed or independently verified result.
+
+## Project additions - October 10, 2026
+
+- Socratic Loop: user-provided display name; implementation inspected in the private `socratic-ise` repository on `dev`, including the agent runtime, PDF reader, writing editor, citations, and flashcard scheduler. Described as in development, without release or adoption claims.
+- Poetic Keyboard: verified repository name `poetic-keyboard`; inspected native Android IME, default writing actions, and Kotlin streaming client. Described as in development. Private repositories are not linked as public source code.
+- PrepX study counselor: inspected `prepx-ai` profile/stat tools, counselor instructions, and study-plan tools. Profile and plan functionality is feature-gated; implementation does not establish that the flags are enabled in production.
+- PrepX role: CTO, following the user's current professional positioning.
 
 ## Resume references
 
