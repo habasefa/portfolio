@@ -46,7 +46,7 @@ button:focus-visible {
   max-width: 210mm;
   min-height: 297mm;
   margin: 0 auto 30px;
-  padding: 13mm 15mm;
+  padding: 11mm 15mm;
   background: #fff;
   box-shadow: 0 1px 8px #00000012;
 }
@@ -70,7 +70,7 @@ button:focus-visible {
   margin: 14px 0 0;
 }
 .resume section {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .resume h2 {
   font-size: 10.5pt;
@@ -78,7 +78,7 @@ button:focus-visible {
   text-transform: uppercase;
   border-bottom: 1px solid #444;
   padding-bottom: 4px;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-weight: 700;
 }
 .entry {
@@ -187,3 +187,5 @@ button:focus-visible {
     font-size: 14px;
   }
 }
+
+.company-context { font-size: 9.5pt; color: #444; margin: 3px 0 0; }

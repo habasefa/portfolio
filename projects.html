@@ -6,12 +6,12 @@
     <title>Projects | Habtamu Asefa</title>
     <meta
       name="description"
-      content="Technical details of PrepX study agents, Socratic Loop, Poetic Keyboard, Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
+      content="Technical details of PrepX study agents, Socratic Loop, Poetic Keyboard, Liqawnt Labs, react-native-ajora, myTorch, and UlcerGuard."
     />
     <meta property="og:title" content="Projects | Habtamu Asefa" />
     <meta
       property="og:description"
-      content="Technical details of PrepX study agents, Socratic Loop, Poetic Keyboard, Liqawnt, react-native-ajora, myTorch, and UlcerGuard."
+      content="Technical details of PrepX study agents, Socratic Loop, Poetic Keyboard, Liqawnt Labs, react-native-ajora, myTorch, and UlcerGuard."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -50,16 +50,17 @@
         <h1>Projects</h1>
         <p>Implementation, scope, and current status.</p>
         <nav class="project-index" aria-label="Projects">
-          <a href="#prepx">PrepX</a><a href="#socratic-loop">Socratic Loop</a
-          ><a href="#poetic-keyboard">Poetic Keyboard</a><a href="#liqawnt">Liqawnt</a
-          ><a href="#ajora">Ajora</a><a href="#mytorch">myTorch</a
+          <a href="#prepx">PrepX</a><a href="#gonumbers">GoNumbers</a><a href="#socratic-loop">Socratic Loop</a
+          ><a href="#poetic-keyboard">Poetic Keyboard</a><a href="#liqawnt">Liqawnt Labs</a
+          ><a href="#micro-vllm">micro-vLLM</a>
+          <a href="#ajora">Ajora</a><a href="#mytorch">myTorch</a
           ><a href="#ulcerguard">UlcerGuard</a>
         </nav>
       </header>
       <article class="case" id="prepx">
         <div class="case-heading">
           <div>
-            <p class="eyebrow">CTO · 2024–present</p>
+            <p class="eyebrow">Lead Software Engineer · 2024–present</p>
             <h2>PrepX</h2>
           </div>
           <span class="status">In use</span>
@@ -75,12 +76,12 @@
         </p>
         <dl class="metrics">
           <div>
-            <dt>2,600+</dt>
-            <dd>downloads</dd>
+            <dt>~200</dt>
+            <dd>students joining per week</dd>
           </div>
           <div>
-            <dt>93,173+</dt>
-            <dd>questions answered</dd>
+            <dt>~30,000</dt>
+            <dd>questions answered per week</dd>
           </div>
           <div>
             <dt>1,824</dt>
@@ -88,10 +89,12 @@
           </div>
         </dl>
         <p class="metric-source">
-          October 5, 2026. Downloads are separate from registered students;
-          questions answered measure student activity.
+          Approximate weekly figures reported October 15, 2026.
+          Questions answered measure student activity; joining students measure weekly acquisition.
         </p>
         <h3>Engineering work</h3>
+        <p>Built the mobile application and AI agent;
+          contributed to the backend and dashboard, and led a four-person engineering team.</p>
         <ul class="work-list">
           <li>
             <strong>Mobile:</strong> React Native and Expo, local SQLite
@@ -145,6 +148,19 @@
             >Google Play <span aria-hidden="true">↗</span></a
           >
         </div>
+      </article>
+            <article class="case" id="gonumbers">
+        <div class="case-heading"><div><p class="eyebrow">Telecom application</p><h2>GoNumbers</h2></div></div>
+        <p class="case-lead">A mobile telecom application for digital numbers and internet calling.</p>
+        <p>Worked on a React Native/Expo application integrating virtual-number management
+          and a FreeSWITCH-backed SIP calling path.</p>
+        <ul class="work-list">
+          <li><strong>Call signaling:</strong> SIP.js user-agent registration and call-session handling with FreeSWITCH.</li>
+          <li><strong>Media:</strong> WebRTC microphone and remote audio handling, with STUN/TURN configuration for network traversal.</li>
+          <li><strong>Native interaction:</strong> Incoming-call presentation and answer/end controls using CallKeep, plus in-call audio routing.</li>
+          <li><strong>Product flows:</strong> Virtual-number selection, conversation screens, and Socket.IO state synchronization.</li>
+        </ul>
+        <p class="project-stack">TypeScript · React Native · Expo · SIP.js · FreeSWITCH · WebRTC · CallKeep · Socket.IO</p>
       </article>
       <article class="case" id="socratic-loop">
         <div class="case-heading">
@@ -213,7 +229,7 @@
         <div class="case-heading">
           <div>
             <p class="eyebrow">AI research and engineering · 2026–present</p>
-            <h2>Liqawnt</h2>
+            <h2>Liqawnt Labs</h2>
           </div>
           <span class="status">In development</span>
         </div>
@@ -222,12 +238,20 @@
           evaluation.
         </p>
         <p>
-          Current work uses a pretrained VITS checkpoint as a baseline. The
+          Liqawnt Labs is a low-resource audio startup working on tokenization, TTS,
+          and ASR. Current work includes fine-tuning Pocket TTS on
+          200 hours of Amharic speech. Earlier work uses a pretrained VITS checkpoint as a baseline. The
           pipeline includes Amharic text normalization and romanization, audio
           conditioning, dataset preparation, fine-tuning, synthesis, and
           evaluation.
         </p>
-        <h3>Implemented work</h3>
+        <h3>Amharic adaptation and evaluation</h3>
+        <ul class="work-list">
+          <li>Fine-tuning Pocket TTS on a 200-hour Amharic speech dataset.</li>
+          <li>Prepared an internal benchmark using word error rate (WER) and native-speaker ratings.</li>
+          <li>Ran reinforcement learning experiments targeting intonation, prosody, and Amharic accent fidelity.</li>
+        </ul>
+        <h3>Earlier VITS pipeline work</h3>
         <ul class="work-list">
           <li>
             Text preprocessing for Ge’ez script, numeral expansion, and
@@ -249,14 +273,23 @@
           </li>
         </ul>
         <p class="case-note">
-          This is a TTS prototype. ASR and speech-to-speech are research
-          directions; they are not presented as completed systems. Freezing the
-          decoder limits voice adaptation.
+          Pocket TTS fine-tuning is in progress. ASR is part of the startup’s
+          research scope; no completed ASR system is claimed. The Amharic evaluation benchmark is internal.
+          Earlier VITS decoder freezing limits voice adaptation.
         </p>
         <p class="project-stack">
           Python · PyTorch · torchaudio · Transformers · NumPy · librosa
         </p>
       </article>
+
+      <article class="case" id="micro-vllm">
+        <div class="case-heading"><h2>micro-vLLM</h2><span class="status">Independent systems project</span></div>
+        <p class="case-lead">Developing a small vLLM-style inference engine from scratch.</p>
+        <p>Working through model-serving internals through implementation, experimentation,
+          and design notes, with a focus on the reasoning behind production tradeoffs.
+          Source code and measured results will be linked as they become available.</p>
+      </article>
+
       <article class="case" id="ajora">
         <div class="case-heading">
           <div>
@@ -347,20 +380,32 @@
           <span class="status">Prototype</span>
         </div>
         <p class="case-lead">
-          Pressure-sensing footwear for identifying foot-ulcer risk.
+          A wearable-to-clinician telemetry pipeline for monitoring foot-pressure distribution.
         </p>
         <p>
-          A footwear prototype that detects high-pressure regions in the foot,
-          developed as a biomedical engineering thesis. The project combines
-          pressure sensing with a React Native companion application.
+          Built as a biomedical engineering thesis: Arduino-based pressure sensors in wearable
+          footwear send measurements to a React Native app over Bluetooth. The phone displays
+          readings and relays them to a backend for live clinician visualization and review.
+        </p>
+        <ul class="work-list">
+          <li><strong>Sensor acquisition:</strong> Read timestamped pressure measurements from toe, heel,
+            and metatarsal regions; parse the sensor stream on the phone.</li>
+          <li><strong>Mobile monitoring:</strong> Visualize pressure distribution, review historical logs,
+            and surface pressure-imbalance alerts to the wearer.</li>
+          <li><strong>Streaming backend:</strong> Forward readings through Socket.IO to a Node.js/Express
+            service, which broadcasts updates to the clinician dashboard.</li>
+          <li><strong>Clinician interface:</strong> Display live sensor readings and visualizations in a React dashboard
+            to support inspection of pressure patterns.</li>
+        </ul>
+        <p class="project-stack">Arduino · Bluetooth · React Native · TypeScript · Node.js/Express · Socket.IO · React
         </p>
         <p class="case-note">
-          Developed as an undergraduate engineering prototype.
+          Developed as a biomedical engineering thesis prototype.
         </p>
         <div class="project-links">
           <a href="https://github.com/habasefa/UlcerGuard"
-            >Mobile source code <span aria-hidden="true">↗</span></a
-          >
+            >Mobile source code <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/habasefa/ulcerguard-dashboard">Dashboard source code ↗</a>
         </div>
       </article>
     </main>
