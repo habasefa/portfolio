@@ -96,3 +96,7 @@ Replaced Freelance & Agency with Software Engineer | Client Projects and one par
 - Next.js dashboard, Express/Prisma API and Agno workflow evidence were checked October 28. GoNumbers uses Prisma with MongoDB in the inspected schema. LangGraph/n8n are user-confirmed skills; no specific unverified outcome is claimed.
 
 The application PDF files are generated and visually checked separately in the Job Hunt workspace, then copied here. HTML resume pages carry matching content; the PDF download is the canonical application artifact.
+
+
+## October 28 Rust update
+Added Rust to the software resume language list per Habtamu; no study history or proficiency qualifier included. Corrected HTML resume graduation years to 2025 and synchronized downloadable PDFs with the verified application documents.
