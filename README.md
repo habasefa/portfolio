@@ -83,3 +83,16 @@ UlcerGuard source confirms react-native-bluetooth-classic pressure acquisition, 
 ## Consolidated client experience
 
 Replaced Freelance & Agency with Software Engineer | Client Projects and one paragraph covering Dymnd, the US bar-exam mobile app, and Keyring. Dymnd and bar-exam contributions remain specifically attributed. Habtamu confirms Keyring was a project he worked on; its detailed responsibilities have not yet been recovered. The accessible recent-chat listing did not surface a Keyring report. No Keyring technology, outcome, client identity or specialization has been invented.
+
+## October 28 portfolio split
+
+- `index.html` is the software engineering portfolio: full stack, web, backend, mobile and applied agents/automation.
+- `ml-systems.html` is the separate ML systems and speech portfolio: Liqawnt, micro-vLLM (in development) and myTorch.
+- `projects.html` contains software case studies; `ml-projects.html` contains ML case studies. Old ML anchors on `projects.html` link to their new case studies.
+- `Resume.html` and `Habtamu_Asefa_Software_Engineer.pdf` serve the software resume.
+- `Resume-ML.html` and `Habtamu_Asefa_ML_Systems_Resume.pdf` serve the ML resume. Legacy `Resume-Audio.html`, `Habtamu_Asefa_Audio_Resume.pdf` and `Habtamu_Asefa_Resume.pdf` remain available.
+- Search scope is user-reported October 28: 250,000+ searchable items across questions, curriculum topics and schools. Approximate weekly acquisition/activity figures remain dated October 15.
+- Client corrections: Dymnd is real-time habit tracking and an AI habit-development advisor; Themis Bar is mobile maintenance/features; Remimb is the Bluetooth keyring companion project. React Native/Expo marketplace work describes implemented UI screens, not verified payment processing or a commercial launch.
+- Next.js dashboard, Express/Prisma API and Agno workflow evidence were checked October 28. GoNumbers uses Prisma with MongoDB in the inspected schema. LangGraph/n8n are user-confirmed skills; no specific unverified outcome is claimed.
+
+The application PDF files are generated and visually checked separately in the Job Hunt workspace, then copied here. HTML resume pages carry matching content; the PDF download is the canonical application artifact.

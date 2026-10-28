@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML systems and speech projects | Habtamu Asefa</title>
+<meta name="description" content="Project scope, implementation and engineering work by Habtamu Asefa.">
+<meta property="og:title" content="ML systems and speech projects | Habtamu Asefa">
+<meta property="og:description" content="Project scope, implementation and engineering work by Habtamu Asefa.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://habasefa.github.io/portfolio/avatar.jpg">
+<link rel="canonical" href="https://habasefa.github.io/portfolio/ml-projects.html">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="site.css?v=20261028-1">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="container header-inner">
+<a class="brand" href="ml-systems.html">Habtamu Asefa</a><nav aria-label="Main navigation"><a class="track-link" href="index.html">Software engineering</a><a class="track-link" href="ml-systems.html" aria-current="page">ML systems &amp; speech</a><a href="ml-systems.html#work">Work</a><a class="nav-resume" href="Habtamu_Asefa_ML_Systems_Resume.pdf">Résumé ↗</a><button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">Dark</button></nav>
+</div></header><main id="main" class="container"><header class="page-intro"><p class="eyebrow"><a href="ml-systems.html">← ML systems &amp; speech</a></p>
+<h1>ML systems and speech projects</h1>
+<p>Implementation, contribution and current status.</p>
+<nav class="project-index" aria-label="Projects"><a href="#liqawnt">Liqawnt Labs</a><a href="#micro-vllm">micro-vLLM</a><a href="#mytorch">myTorch</a></nav></header><article class="case" id="liqawnt">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">AI research and engineering · 2026–present</p>
+            <h2>Liqawnt Labs</h2>
+          </div>
+          <span class="status">In development</span>
+        </div>
+        <p class="case-lead">
+          Amharic text-to-speech adaptation, from corpus preparation to
+          evaluation.
+        </p>
+        <p>
+          Liqawnt Labs is a low-resource audio startup working on tokenization, TTS,
+          and ASR. Current work includes fine-tuning Pocket TTS on
+          200 hours of Amharic speech. Earlier work uses a pretrained VITS checkpoint as a baseline. The
+          pipeline includes Amharic text normalization and romanization, audio
+          conditioning, dataset preparation, fine-tuning, synthesis, and
+          evaluation.
+        </p>
+        <h3>Amharic adaptation and evaluation</h3>
+        <ul class="work-list">
+          <li>Fine-tuning Pocket TTS on a 200-hour Amharic speech dataset.</li>
+          <li>Prepared an internal benchmark using word error rate (WER) and native-speaker ratings.</li>
+          <li>Ran reinforcement learning experiments targeting intonation, prosody, and Amharic accent fidelity.</li>
+        </ul>
+        <h3>Earlier VITS pipeline work</h3>
+        <ul class="work-list">
+          <li>
+            Text preprocessing for Ge’ez script, numeral expansion, and
+            homophone normalization, shared between training and inference.
+          </li>
+          <li>
+            Audio resampling, silence trimming, loudness normalization, and
+            quality checks before writing dataset manifests.
+          </li>
+          <li>
+            A PyTorch training path for the text encoder, flow, and duration
+            predictor, with monotonic alignment search. The posterior encoder
+            and waveform decoder remain frozen.
+          </li>
+          <li>
+            Evaluation code for spectral distortion, pitch, voicing, and
+            duration. Results depend on the reference speaker and are
+            interpreted alongside listening tests.
+          </li>
+        </ul>
+        <p class="case-note">
+          Pocket TTS fine-tuning is in progress. ASR is part of the startup’s
+          research scope; no completed ASR system is claimed. The Amharic evaluation benchmark is internal.
+          Earlier VITS decoder freezing limits voice adaptation.
+        </p>
+        <p class="project-stack">
+          Python · PyTorch · torchaudio · Transformers · NumPy · librosa
+        </p>
+      </article>
+
+      <article class="case" id="micro-vllm">
+        <div class="case-heading">
+<h2>micro-vLLM</h2>
+<span class="status">Independent systems project</span>
+</div>
+        <p class="case-lead">Developing a small vLLM-style inference engine from scratch.</p>
+        <p>Working through model-serving internals through implementation, experimentation,
+          and design notes, with a focus on the reasoning behind production tradeoffs.
+          Source code and measured results will be linked as they become available.</p>
+      </article>
+
+      <article class="case" id="mytorch">
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">Learning project · 2026</p>
+            <h2>myTorch</h2>
+          </div>
+          <span class="status">Open source</span>
+        </div>
+        <p class="case-lead">
+          A small implementation of neural-network fundamentals in Python.
+        </p>
+        <p>
+          A micrograd-style scalar autograd engine records a computation graph
+          and propagates gradients in reverse topological order. Neuron, layer,
+          and MLP classes use the engine; an SGD optimizer updates parameters.
+        </p>
+        <ul class="work-list">
+          <li>
+            Arithmetic operators and ReLU with accumulated gradients, including
+            reused operands and multiple paths through the graph.
+          </li>
+          <li>
+            Unit tests for forward operations, graph structure, and backward
+            propagation.
+          </li>
+          <li>
+            A byte-level BPE tokenizer with pair-frequency training, ordered
+            merge replay, encoding, and decoding.
+          </li>
+        </ul>
+        <p class="case-note">
+          An educational implementation, not a tensor framework or a replacement
+          for PyTorch.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/habasefa/myTorch">Source code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      </main><footer class="site-footer container"><span>Habtamu Asefa · Addis Ababa, Ethiopia</span><span><a href="index.html">Software engineering →</a> · <a href="Resume-ML.html">Résumé</a> · <a href="https://github.com/habasefa">GitHub</a></span></footer><script src="app.js?v=20261028-1" defer></script>
+</body>
+</html>
